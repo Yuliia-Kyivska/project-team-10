@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodSta</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="nav">
+          <a href="index.html" class="link logo nav__logo"
+            >Web<span class="dark-logo">Studio</span></a
+          >
+
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link nav__link--active link"
+                >Студия</a
+              >
+            </li>
+
+            <li class="nav__item">
+              <a href="portfolio.html" class="nav__link link">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link link">Контакты</a>
+            </li>
+          </ul>
+
+          <!-- кнопка -->
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              class="menu-button__icon"
+              width="40"
+              height="40"
+              aria-label="мобильное выпадающее меню"
+            >
+              <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+              <use
+                class="icon-cross"
+                href="./images/icons.svg#icon-cross"
+              ></use>
+            </svg>
+          </button>
+
+          <!-- Мобильное меню -->
+          <div class="menu-container" id="menu-container" data-menu>
+            <div class="mob-nav">
+              <ul class="list mob-nav__list">
+                <li class="mob-nav__item">
+                  <a
+                    href="./index.html"
+                    class="mob-nav__link mob-nav__link--active link"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mob-nav__item">
+                  <a href="./portfolio.html" class="mob-nav__link link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mob-nav__item">
+                  <a href="#contacts" class="mob-nav__link link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mob-contacts">
+              <ul class="list mob-contacts__list">
+                <li class="mob-contacts__item">
+                  <a
+                    href="tel:+380961111111"
+                    class="mob-contacts__link link tel"
+                  >
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="mob-contacts__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mob-contacts__link link e-mail"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mob-socials">
+              <ul class="mob-socials__list list">
+                <li class="mob-socials__item">
+                  <a
+                    class="mob-socials__link link"
+                    href=""
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mob-socials__item">
+                  <a
+                    class="mob-socials__link link"
+                    href=""
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="mob-socials__item">
+                  <a
+                    class="mob-socials__link link"
+                    href=""
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mob-socials__item">
+                  <a
+                    class="mob-socials__link link"
+                    href=""
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!--contacts!-->
+        <ul class="list contact">
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" class="contact__link link">
+              <svg class="contact__icon mail-icon" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contact__item">
+            <a href="tel:+380961111111" class="contact__link link">
+              <svg class="contact__icon tel-icon" width="10" height="16">
+                <use href="./images/icons.svg#telephone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!--hero!-->
+      <section class="hero">
+        <div class="container">
+          <h1>Enjoy Your Favorite Food From Anywhere</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+            tenetur saepe sequi nam aliquid dolorum ex quia! Aliquam pariatur
+            eaque autem voluptatibus commodi adipisci aperiam, facere aspernatur
+            assumenda voluptatum qui!
+          </p>
+          <button type="submit" class="hero-button">Order Now</button>
+          <img src="" alt="" />
+        </div>
+      </section>
+
+      <!--Offerings!-->
+      <section class="offerings">
+        <div class="container">
+          <h2>What’s Special About Our Offerings</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            ratione totam dolorum ex placeat nostrum incidunt illo sequi
+          </p>
+          <!--здесь при помощи кард сета выстраиваем сетку на 2 элемента!-->
+          <div class="benefits">
+            <!--<ul class="benefits__list cards-set list">
+            <li class="benefits__item card-item">
+              <div class="benefits__thumb">
+                <svg class="benefits-icon" width="70" height="70">
+                  <use href="./images/icons.svg#antenna"></use>
+                </svg>
+              </div>
+
+              <h3 class="benefits__title">Fasest Delivery/h3>
+              <p class="benefits__text">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            ratione totam dolorum ex placeat nostrum incidunt illo sequi
+              </p>
+            </li>
+          <li class="benefits__item card-item">
+              <div class="benefits__thumb">
+                <svg class="benefits-icon" width="70" height="70">
+                  <use href="./images/icons.svg#antenna"></use>
+                </svg>
+              </div>
+
+              <h3 class="benefits__title">Easy To Ordery/h3>
+              <p class="benefits__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            ratione totam dolorum ex placeat nostrum incidunt illo sequi
+              </p>
+            </li>
+          </ul>
+        !-->
+            <button type="button" class="hero-button">Order Now</button>
+          </div>
+        </div>
+      </section>
+      <!--Favorites -->
+      <section class="offerings">
+        <div class="container">
+          <h2>Some of Our Favorites</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <!--здесь, ка в портфолио 6 элементов, в коменте всего 1 элемент, название класов повторяем!-->
+          <!--
+            <ul class="list portfolio-list cards-set">
+            <li class="cards-set__item cards">
+              <a href="javascript:;" class="link cards__link">
+                <div class="cards__overlay">
+                 
+                  <picture>
+                 
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img1@1x_lg.webp 1x,
+                        ./images/portfolio/img1@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img1@1x_lg.jpg 1x,
+                        ./images/portfolio/img1@2x_lg.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+
+                    <!--tablet screen--!>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img1@1x_md.webp 1x,
+                        ./images/portfolio/img1@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img1@1x_md.jpg 1x,
+                        ./images/portfolio/img1@2x_md.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <!--mobile screen--!>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img1@1x_sm.webp 1x,
+                        ./images/portfolio/img1@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img1@1x_sm.jpg 1x,
+                        ./images/portfolio/img1@2x_sm.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/portfolio/img1@1x_sm.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="cards__overlayed">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="cards__content">
+                  <h2 class="cards__title">Технокряк</h2>
+                  <p class="cards__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+          
+            еще 5 точно таких же лишек
+          </ul>
+          -->
+        </div>
+      </section>
+      <!--Customers Say !-->
+      <section class="customers">
+        <div class="container">
+          <h2>What our Customers Say</h2>
+          <p>Lorem ipsum, dolor sit amet consectetu adipisicing elit.</p>
+          <ul>
+            <li>
+              <img src="" alt="звездочки" />
+              <p>Lorem ipsum, dolor sit amet consectetu adipisicing elit</p>
+              <div class="">
+                <img src="" alt="лицо покупателя" />
+                <p>имя покупателя</p>
+              </div>
+            </li>
+            <li>
+              <img src="" alt="звездочки" />
+              <p>Lorem ipsum, dolor sit amet consectetu adipisicing elit</p>
+              <div class="">
+                <img src="" alt="лицо покупателя" />
+                <p>имя покупателя</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Subscribe  переиспользуем кнопку!-->
+      <section class="subscribe">
+        <div class="container">
+          <h2>Subscribe To Get Special Offers</h2>
+          <p>Lorem ipsum, dolor sit amet consectetu adipisicing elit</p>
+
+          <form class="subscribe-form">
+            <input
+              class="subscribe-form__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <button type="button" class="hero-button">
+              <span class="span-subscribe">Subscribe</span>
+              <svg class="social-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#footer-send"></use>
+              </svg>
+            </button>
+          </form>
+          <img src="" alt="банан в пикчерсах" />
+        </div>
+      </section>
+    </main>
+
+    <!--footer!-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <a href="" class="link footer__logo"
+            >Web<span class="white">Studio</span></a
+          >
+        </div>
+
+        <ul class="list menu__list">
+          <li class="">
+            <a href="" class=""></a>
+          </li>
+          <li class="">
+            <a href="" class=""></a>
+          </li>
+          <li class="">
+            <a href="" class=""></a>
+          </li>
+          <li class="">
+            <a href="" class=""></a>
+          </li>
+          <li class="">
+            <a href="" class=""></a>
+          </li>
+
+          <li class="subscription footer__item">
+            <p class="subscription__follow">Subscribe</p>
+
+            <form class="subscribe-form">
+              <input
+                class="subscribe-form__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+              <span
+                >Lorem ipsum, dolor sit amet consectetu adipisicing elit</span
+              >
+              <button type="button" class="hero-button">
+                <span class="span-subscribe"> Subscribe</span>
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#footer-send"></use>
+                </svg>
+              </button>
+            </form>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="">Privacy Policy </a>
+          </li>
+          <li><a href="">Terms of Service</a></li>
+          <li><a href="">Cookies Settings</a></li>
+          <li>
+            <span>2022 FoodSta. All right reserved.</span>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
