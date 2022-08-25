@@ -1,0 +1,17 @@
+.cards-set {
+  //gap: var(--card-set-gap);
+  //display: flex;
+  // flex-wrap: wrap;
+
+  @include mq(tab) {
+    //--card-item: 2;
+  }
+
+  @include mq(desk) {
+    //--card-item: 3;
+  }
+}
+
+.cards-set__item {
+  // flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item));
+}
