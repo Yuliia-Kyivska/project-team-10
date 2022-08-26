@@ -10,8 +10,44 @@
     background-size: cover;
     
     text-align: right;
+
+    /** Mobile screen **/
+        background-image: url('../images/offerings/rectangle-img-1@1x_sm.png');
+        background-image: -webkit-image-set(url('../images/offerings/rectangle-img-1@1x_sm.webp') 1x);
+    
+        @include mq(retina) {
+            background-image: url('../images/offerings/rectangle-img-1@2x_sm.png');
+            background-image: -webkit-image-set(url('../images/offerings/rectangle-img-1@2x_sm.webp') 2x);
+        }
+    
+        // tablet screen
+        @include mq(tab) {
+            background-image: url('../images/offerings/rectangle-img-2@1x_md.png');
+            background-image: -webkit-image-set(url('../images/offerings/rectangle-img-2@1x_md.webp') 1x);
+    
+            @include mq(retina) {
+                background-image: url('../images/offerings/rectangle-img-2@2x_md.png');
+                background-image: -webkit-image-set(url('../images/offerings/rectangle-img-2@2x_md.webp') 2x);
+            }
+        }
+    
+        // desktop screen
+    
+        @include mq(desk) {
+            padding-top: 200px;
+            padding-bottom: 200px;
+            background-image: url('../src/images/offerings/rectangle-img-3@1x_lg.png');
+            background-image: -webkit-image-set(url('../src/images/offerings/rectangle-img-3@1x_lg.webp') 1x);
+    
+            @include mq(retina) {
+                background-image: url('../images/offerings/rectangle-img-3@2x_lg.png');
+                background-image: -webkit-image-set(url('../images/offerings/rectangle-img-3@2x_lg.webp') 2x);
+            }
+        }
 }
  
+
+
 &__thumd{
     display: flex;
     align-items: center;
