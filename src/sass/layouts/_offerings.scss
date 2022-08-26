@@ -36,8 +36,8 @@
         @include mq(desk) {
             padding-top: 200px;
             padding-bottom: 200px;
-            background-image: url('../src/images/offerings/rectangle-img-3@1x_lg.png');
-            background-image: -webkit-image-set(url('../src/images/offerings/rectangle-img-3@1x_lg.webp') 1x);
+            background-image: url('../images/offerings/rectangle-img-3@1x_lg.png');
+            background-image: -webkit-image-set(url('../images/offerings/rectangle-img-3@1x_lg.webp') 1x);
     
             @include mq(retina) {
                 background-image: url('../images/offerings/rectangle-img-3@2x_lg.png');
@@ -46,7 +46,12 @@
         }
 }
  
-
+&__list{
+--card-set: 1;
+}
+&__item{
+--card-set-gap: 67px;
+}
 
 &__thumd{
     display: flex;
