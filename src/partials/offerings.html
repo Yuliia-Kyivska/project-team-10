@@ -1,13 +1,31 @@
 <section>
     <div>
+        <picture>
+        <!-- Desktop -->
+        <source media="(min-width:1200px)" srcset="_./images/offerings/apple-img-3@1x_lg.webp 1x,
+        _./images/offerings/apple-img-3@2x_lg.webp 2x" type="image/webp">
+        <source media="(min-width:1200px)" srcset="_./images/offerings/apple-img-3@1x_lg.png 1x,
+        _./images/offerings/apple-img-3@2x_lg.png 2x" type="image/png">
+        <!-- Tablet -->
+        <source media="(min-width:768px)" srcset="_./images/offerings/apple-img-2@1x_md.webp 1x,
+        _./images/offerings/apple-img-2@2x_md.webp 2x" type="image/webp">
+        <source media="(min-width:768px)" srcset="_./images/offerings/apple-img-2@1x_md.png 1x,
+        _./images/offerings/apple-img-2@2x_md.png 2x" type="image/png">
+        <!-- Mobile -->
+        <source media="(max-width:767px)" srcset="_./images/offerings/apple-img-1@1x_sm.webp 1x,
+        _./images/offerings/apple-img-2@2x_sm.webp 2x" type="image/webp">
+        <source media="(max-width:767px)" srcset="_./images/offerings/apple-img-1@1x_sm.png 1x,
+        _./images/offerings/apple-img-1@2x_sm.png 2x" type="image/jpeg">
+        <img src="./src/images/offerings/apple-img-1@1x_sm.png" alt="apple" width="550" height="604" />       
+        </picture>
         <h2>What’s Special About Our Offerings</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
         cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
         <ul>
             <li>
 <div>
-    <svg >
-        <use></use>
+    <svg width="48" height="48">
+        <use href="./images/icons.svg#hend"></use>
     </svg>
 </div>
 <h3>Fasest Delivery</h3>
@@ -17,8 +35,8 @@
             </li>
             <li>
 <div>
-    <svg>
-        <use></use>
+    <svg width="48" height="48">
+        <use href="./images/icons.svg#rocket"></use>
     </svg>
 </div>
 <h3>Easy To Order</h3>
@@ -30,3 +48,6 @@
         <button type="button">Order Now</button>
     </div>
 </section>
+
+
+
