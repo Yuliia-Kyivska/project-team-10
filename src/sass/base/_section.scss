@@ -16,12 +16,12 @@
   color: #2c2c2c;
 }
 
-//.section {
-//padding-top: 60px;
-//padding-bottom: 60px;
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-//@include mq(desk) {
-//padding-top: 94px;
-//padding-bottom: 94px;
-//}
-//}
+  @include mq(desk) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}

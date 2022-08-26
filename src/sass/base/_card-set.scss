@@ -1,4 +1,5 @@
 .cards-set {
+<<<<<<< HEAD
     gap: var(--card-set-gap);
     display: flex;
     flex-wrap: wrap;
@@ -14,4 +15,23 @@
 
 .cards-set-gap {
     flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item));
+=======
+  gap: var(--card-set-gap);
+  display: flex;
+  flex-wrap: wrap;
+
+  @include mq(tab) {
+    --card-item: 2;
+  }
+
+  @include mq(desk) {
+    --card-item: 3;
+  }
+}
+
+.cards-set-gap {
+  flex-basis: calc(
+    (100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item)
+  );
+>>>>>>> a8ae4d98f6e1241d37a833cb88992d4643199f19
 }
