@@ -3,11 +3,11 @@
 
 &__container{
     display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        padding-right: 20px;
-        padding-left: 20px;
-        margin-bottom: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 60px;
 
     max-width: 1280px;
     margin-left: auto;
@@ -90,8 +90,6 @@
 
 &__thumd{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
 }
 
  &__icon{
@@ -106,6 +104,14 @@
     font-size: 18px;
     line-height: calc(21/18);
  }
+
+
+ &__order{
+    padding-left: 20px;
+    padding-right: 48px;
+    margin-bottom: 28px;
+ }
+
 
  &__button{
     max-width: 106px;
