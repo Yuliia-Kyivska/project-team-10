@@ -1,0 +1,181 @@
+.hero {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  @include mq(tab) {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 74px;
+    position: relative;
+  }
+  @include mq(desk) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 14px;
+  }
+}
+.hero__content {
+  width: 100%;
+  @include mq(tab) {
+    max-width: 537px;
+  
+  }
+  @include mq(desk) {
+    margin-top: 146px;
+  }
+}
+.hero__title {
+  margin-bottom: 28px;
+  width: 100%;
+
+  @include mq(tab) {
+    margin-bottom: 44px;
+    font-size: 42px;
+    line-height: 1.2;
+  }
+  @include mq(desk) {
+    font-size: 48px;
+    margin-bottom: 28px;
+    width: 502px;
+  }
+}
+
+.hero__text {
+  margin-bottom: 28px;
+  width: 100%;
+
+  @include mq(tab) {
+    margin-bottom: 40px;
+    font-size: 16px;
+    width: 336px;
+  }
+  @include mq(desk) {
+    width: 502px;
+  }
+}
+
+.hero__btn {
+  border-radius: 30px;
+  padding: 5px 16px;
+  background-color: #bbf330;
+  color: #2c2c2c;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: right;
+  border-color: transparent;
+  cursor: pointer;
+  &:hover, &:focus {
+    background-color: #B5FF00;
+  }
+}
+
+.hero__swiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  @include mq(mob-only) {
+  display: none;
+  }
+  @include mq(tab-only) {
+    max-width: 336px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  @include mq(desk) {
+    max-width: 608px;
+  }
+
+}
+.hero__img{
+  @include mq(tab) {
+    
+    display: flex;
+    border-radius: 50%;
+    width: 320px;
+
+    border: 16px solid #ffe550;
+    align-items: center;
+    justify-content: center;
+  }
+  @include mq(desk) {
+    border-radius: 50%;
+    width: 580px;
+    border: 14px solid #ffe550;
+  }
+}
+
+.swiper__btn-next {
+  width: 34px;
+  height: 28px;
+  cursor: pointer;
+  fill: #2c2c2c;;
+  position: absolute;
+  display: flex;
+  right: -13px;
+  padding: 6px 13px 6px 9px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+
+  
+  &:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);}
+  @include mq(desk) {
+    width: 48px;
+    height: 40px;  
+    &:hover {
+    fill: #7EB101;
+  }
+}}
+.swiper__btn-prev {
+  width: 34px;
+  height: 28px;
+
+ 
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  left: -13px;
+  fill: #2c2c2c;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+padding: 6px 13px 6px 9px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  
+  &:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
+  @include mq(desk) {
+    width: 48px;
+    height: 40px;
+    &:hover {
+      fill: #7EB101;
+    }
+  }
+}
+
+
+.swiper__icon {
+  color: currentColor;
+ 
+  width: 27px;
+  height: 21px;
+  @include mq(desk) {
+    width: 41px;
+    height: 38px;
+
+
+  }
+}
+
