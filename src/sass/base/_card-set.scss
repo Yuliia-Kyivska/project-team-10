@@ -1,3 +1,24 @@
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+
+  @include mq(tab) {
+    --card-item: 2;
+  }
+
+  @include mq(desk) {
+    --card-item: 4;
+  }
+}
+
+.card-item {
+  flex-basis: calc(100% / var(--card-item) - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
 //.cards-set {
 //gap: var(--card-set-gap);
 //display: flex;
