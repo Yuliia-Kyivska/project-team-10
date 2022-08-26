@@ -1,5 +1,6 @@
 <section class="offerings">
     <div class="container">
+        <div class="offerings__container">
         <picture>
         <!-- Desktop -->
         <source media="(min-width:1200px)" srcset="./images/offerings/apple-img-3@1x_lg.webp 1x,
@@ -21,10 +22,10 @@
         <h2>What’s Special About Our Offerings</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
         cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-        <ul class="card-set list">
-            <li class="card-item">
-<div>
-    <svg width="48" height="48">
+        <ul class="card-set offerings__list  list">
+            <li class="card-item offerings__item ">
+<div class="offerings__thumb">
+    <svg class="offerings__icon" width="48" height="48">
         <use href="./images/icons.svg#hend"></use>
     </svg>
 </div>
@@ -34,8 +35,8 @@
 </p>
             </li>
             <li>
-<div>
-    <svg width="48" height="48">
+<div class="offerings__thumb">
+    <svg class="offerings__icon" width="48" height="48">
         <use href="./images/icons.svg#rocket"></use>
     </svg>
 </div>
@@ -45,7 +46,8 @@
 </p>
             </li>
         </ul>
-        <button type="button">Order Now</button>
+        </div>
+        <button class="" type="button">Order Now</button>
     </div>
 </section>
 
