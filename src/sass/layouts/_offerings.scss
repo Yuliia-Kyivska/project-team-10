@@ -1,4 +1,5 @@
 .offerings{
+<<<<<<< Updated upstream
 
 &__container{
     max-width: 1280px;
@@ -51,6 +52,51 @@
 }
 &__item{
 --card-set-gap: 67px;
+=======
+   
+&__container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom:60px;
+}
+
+&__title{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 28px;
+
+    @include mq(mob) {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33/28);
+    }
+
+    @include mq(mob) {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(49/42);
+    }
+}
+
+&__text{
+    padding-left: 20px;
+    padding-right: 28px;
+    margin-bottom: 28px;
+
+    @include mq(mob){
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16/14);
+    }
+
+}
+
+&__item{
+
+>>>>>>> Stashed changes
 }
 
 &__thumd{
@@ -58,9 +104,28 @@
     align-items: center;
     justify-content: center;
 }
+
  &__icon{
-    display: flex;
     width: 48px;
     height: 48px;
+    margin-bottom: 8px;
+ }
+
+ &__del{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(21/18);
+ }
+
+ &__button{
+    max-width: 106px;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    background: #FFFFFF;
+    border: 2px solid #7EB101;
+    border-radius: 30px;
  }
 }
