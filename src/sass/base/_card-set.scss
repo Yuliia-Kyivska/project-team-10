@@ -1,17 +1,23 @@
-.cards-set {
-gap: var(--card-set-gap);
-display: flex;
- flex-wrap: wrap;
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-gap));
+    margin-top: calc(-1 * var(--card-gap));
 
- @include mq(tab) {
---card-item: 2;
+
+
+    @include mq(tab) {
+        --card-item: 2;
+    }
+
+    @include mq(desk) {
+        --card-item: 4;
+    }
 }
 
- @include mq(desk) {
---card-item: 3;
-}
-}
 
-.cards-set-gap{
-flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item));
+.card-item {
+    flex-basis: calc(100% / var(--card-item) - var(--card-gap));
+    margin-left: var(--card-gap);
+    margin-top: var(--card-gap);
 }

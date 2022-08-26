@@ -1,11 +1,20 @@
 .offerings{
-&__container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
 
-&__
+&__container{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right:auto;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    text-align: right;
+}
+ 
+&__item{
+--card-gap: 67px;
+}
 
 &__thumd{
     display: flex;
