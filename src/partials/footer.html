@@ -1,0 +1,66 @@
+<footer class="footer">
+      <div class="container">
+          <a class="logo" href="./index.html" class="link">
+         <picture>
+          <source
+          media="(min-width:320px)"
+          srcset="
+          ./images/logo/logo@1x.png 1x,
+          ./images/logo/logo@2x.png 2x"
+          type="image/png">
+          <img src="./images/logo/logo@1x.png" alt="lolo" width="69" height="51">
+         </picture>
+        </a>
+        <ul class="footer__list">
+          <li class="list footer__item">
+            <ul class="footer__menu">
+              <li class="list footer__menu-item text"><a class="link" href="#">Home</a></li>
+              <li class="list footer__menu-item text"><a class="link" href="#">About</a></li>
+              <li class="list footer__menu-item text"><a class="link" href="#">Service</a></li>
+              <li class="list footer__menu-item text"><a class="link" href="#">Menu</a></li>
+              <li class="list footer__menu-item text"><a class="link" href="#">Contact</a></li>
+            </ul>
+          </li>
+          <li class="list footer__item">
+            <h2 class="title">Subscribe</h2> 
+            <form class="signup-form" name="signup_form" autocomplete="off">
+              <input class="signup-form__input"
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                id="user_mail"
+                required minlength="6"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+              <span class="signup-form__input-invalid">
+                <svg class="signup-form__input-icon">
+                  <use href="./images/icons.svg#errorsvg"></use>
+                </svg>Not a valid email address (example@email.com)
+              </span>
+                <button class="signup-form__button">Subscribe</button>
+            </form>
+            <p class="footer__agreement">By subscribing you agree to with our <a href="#" class="footer__agreement-link" target="_blank"
+                rel="noopener nofollow noreferrer">Privacy Policy</a>
+              </p>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="list footer__item">
+            <ul class="footer__privacy">
+              <li class="list footer__privacy-item">
+                <a class="footer__privacy-link" href="#" target="_blank"
+                rel="noopener nofollow noreferrer">Privacy Policy</a>
+              </li>
+              <li class="list footer__privacy-item">
+                <a class="footer__privacy-link" href="#" target="_blank"
+                rel="noopener nofollow noreferrer">Terms of Service</a>
+              </li>
+              <li class="list footer__privacy-item">
+                <a class="footer__privacy-link" href="#" target="_blank"
+                rel="noopener nofollow noreferrer">Cookies Settings</a>
+              </li>
+            </ul>
+          </li>
+          <p class="footer__licence">2022 FoodSta. All right reserved.</p>
+        </ul>
+      </div>
+    </footer>
