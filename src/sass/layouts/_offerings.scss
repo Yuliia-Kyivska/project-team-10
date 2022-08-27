@@ -2,9 +2,9 @@
 
 
 &__container{
-    display: grid;
-    column-gap: 90px;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 60px;
 
     max-width: 1280px;
@@ -50,13 +50,9 @@
         }
 }
  
-  &__img{
-    grid-row-start: 1;
-    grid-row-end:5 ;
-  }
-
 &__title{
-    grid-column-start:2;
+   
+
     @include mq(mob) {
     font-weight: 700;
     font-size: 28px;
@@ -77,7 +73,8 @@
 }
 
 &__text{
-    grid-column-start: 2;
+   
+    
     @include mq(mob){
     font-weight: 400;
     font-size: 14px;
@@ -87,10 +84,10 @@
 }
 
 &__list{
-    grid-column-start: 2;
+   
 }
 &__thumd{
-    grid-column-start: 2;
+    
 }
 
  &__icon{
@@ -113,6 +110,7 @@
 
 
  &__button{
+   
     max-width: 106px;
 
     font-weight: 500;
