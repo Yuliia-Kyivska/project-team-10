@@ -3,10 +3,6 @@
 
 &__container{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-right: 20px;
-    padding-left: 20px;
     margin-bottom: 60px;
 
     max-width: 1280px;
@@ -57,9 +53,6 @@
   
 
 &__title{
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 28px;
 
     @include mq(mob) {
     font-weight: 700;
@@ -67,17 +60,20 @@
     line-height: calc(33/28);
     }
 
-    @include mq(mob) {
+    @include mq(tab) {
     font-weight: 700;
     font-size: 42px;
     line-height: calc(49/42);
     }
+
+    @include mq(desk){
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    }
 }
 
 &__text{
-    padding-left: 20px;
-    padding-right: 28px;
-    margin-bottom: 28px;
 
     @include mq(mob){
     font-weight: 400;
@@ -87,7 +83,9 @@
 
 }
 
-
+&__list{
+    display: flex;
+}
 &__thumd{
     display: flex;
 }
