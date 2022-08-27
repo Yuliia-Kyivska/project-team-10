@@ -8,46 +8,65 @@
     </p>
     <button type="button" class="hero__btn">Order Now</button>
   </div>
-  <div class="hero__swiper">
-    <div class="hero__img">
-      <div class="swiper__slide">
-        <picture>
-          <!--Desktop screen-->
-          <source srcset="./images/hero/hero1-lg@1x.webp 1x, ./images/hero/hero1-lg@2x.webp 2x" media="(min-width:1280px)" type="image/webp"/>
-          <source media="(min-width:1280px)" srcset="./images/hero/hero1-lg@1x.png 1x, ./images/hero/hero1-lg@2x.png 2x" type="image/png"/>
-        
-          <!--tablet screen-->
-          <source media="(min-width:768px)" srcset="./images/hero/hero1-md@1x.webp 1x, ./images/hero/hero1-md@2x.webp 2x" type="image/webp"/>
-          <source media="(min-width:768px)" srcset="./images/hero/hero1-md@1x.png 1x, ./images/hero/hero1-md@2x.png 2x" type="image/png"/>
-        
-          <img src="./images/hero/hero1-lg@1x.png" alt="Dish"/>
-        </picture>
-        <!-- <img 
-        srcset="
-        ./images/hero/hero1-lg@1x.webp 528w,
-        ./images/hero/hero1-lg@2x.webp 1056w,
-        ./images/hero/hero1-md@1x.webp 292w,
-        ./images/hero/hero1-md@2x.webp 584w"
-        sizes="(min-width:1280px) 528px, (min-width:768px) 292px"
-        src="./images/hero/hero1-md@1x.png" 
-        width="528"
-        height="528"
-        alt="dish"> -->
+  <div class="swiper-container">
+    <div class="hero__swiper swiper">  
+      <div class="hero__img swiper-wrapper">
+        <div class="swiper__slide swiper-slide">
+            <picture>
+              <!--Desktop screen-->
+              <source srcset="./images/hero/hero1-lg@1x.webp 1x, ./images/hero/hero1-lg@2x.webp 2x" media="(min-width:1280px)" type="image/webp"/>
+              <source media="(min-width:1280px)" srcset="./images/hero/hero1-lg@1x.png 1x, ./images/hero/hero1-lg@2x.png 2x" type="image/png"/>
+            
+              <!--tablet screen-->
+              <source media="(min-width:768px)" srcset="./images/hero/hero1-md@1x.webp 1x, ./images/hero/hero1-md@2x.webp 2x" type="image/webp"/>
+              <source media="(min-width:768px)" srcset="./images/hero/hero1-md@1x.png 1x, ./images/hero/hero1-md@2x.png 2x" type="image/png"/>
+            
+              <img src="./images/hero/hero1-lg@1x.png" alt="Dish"/>
+            </picture>
+            
+        </div>
+        <div class="swiper__slide swiper-slide">
+            <picture>
+              <!--Desktop screen-->
+              <source srcset="./images/hero/hero2-lg@1x.webp 1x, ./images/hero/hero2-lg@2x.webp 2x" media="(min-width:1280px)" type="image/webp"/>
+              <source media="(min-width:1280px)" srcset="./images/hero/hero2-lg@1x.png 1x, ./images/hero/hero2-lg@2x.png 2x" type="image/png"/>
+            
+              <!--tablet screen-->
+              <source media="(min-width:768px)" srcset="./images/hero/hero2-md@1x.webp 1x, ./images/hero/hero2-md@2x.webp 2x" type="image/webp"/>
+              <source media="(min-width:768px)" srcset="./images/hero/hero2-md@1x.png 1x, ./images/hero/hero2-md@2x.png 2x" type="image/png"/>
+            
+              <img src="./images/hero/hero2-lg@1x.png" alt="Dish"/>
+            </picture>
+            
+        </div>
+        <div class="swiper__slide swiper-slide">
+            <picture>
+              <!--Desktop screen-->
+              <source srcset="./images/hero/hero3-lg@1x.webp 1x, ./images/hero/hero3-lg@2x.webp 2x" media="(min-width:1280px)" type="image/webp"/>
+              <source media="(min-width:1280px)" srcset="./images/hero/hero3-lg@1x.png 1x, ./images/hero/hero3-lg@2x.png 2x" type="image/png"/>
+            
+              <!--tablet screen-->
+              <source media="(min-width:768px)" srcset="./images/hero/hero3-md@1x.webp 1x, ./images/hero/hero3-md@2x.webp 2x" type="image/webp"/>
+              <source media="(min-width:768px)" srcset="./images/hero/hero3-md@1x.png 1x, ./images/hero/hero3-md@2x.png 2x" type="image/png"/>
+            
+              <img src="./images/hero/hero3-lg@1x.png" alt="Dish"/>
+            </picture>
+            
+        </div>
       </div>
     </div>
-    <div class="swiper__btn-prev">
-      
+    <div class="swiper__btn-prev swiper-button-prev">
+          
       <svg class="swiper__icon" >
         <use href="./images/icons.svg#prev"></use>
       </svg>
       
     </div>
-    <div class="swiper__btn-next">
+    <div class="swiper-button-next swiper__btn-next">
       
       <svg class="swiper__icon">
         <use href="./images/icons.svg#next" ></use>
       </svg>
-      
     </div>
   </div>
 </section>
