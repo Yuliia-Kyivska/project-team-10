@@ -1,123 +1,109 @@
-.offerings{
+.offerings {
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &__container {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
-&__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 60px;
-
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right:auto;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
-    /** Mobile screen **/
+        /** Mobile screen **/
         background-image: url('../images/offerings/rectangle-img-1@1x_sm.png');
         background-image: -webkit-image-set(url('../images/offerings/rectangle-img-1@1x_sm.webp') 1x);
-    
+
         @include mq(retina) {
             background-image: url('../images/offerings/rectangle-img-1@2x_sm.png');
             background-image: -webkit-image-set(url('../images/offerings/rectangle-img-1@2x_sm.webp') 2x);
         }
-    
+
         // tablet screen
         @include mq(tab) {
             background-image: url('../images/offerings/rectangle-img-2@1x_md.png');
             background-image: -webkit-image-set(url('../images/offerings/rectangle-img-2@1x_md.webp') 1x);
-    
+
             @include mq(retina) {
                 background-image: url('../images/offerings/rectangle-img-2@2x_md.png');
                 background-image: -webkit-image-set(url('../images/offerings/rectangle-img-2@2x_md.webp') 2x);
             }
         }
-    
+
         // desktop screen
-    
+
         @include mq(desk) {
-            padding-top: 200px;
-            padding-bottom: 200px;
             background-image: url('../images/offerings/rectangle-img-3@1x_lg.png');
             background-image: -webkit-image-set(url('../images/offerings/rectangle-img-3@1x_lg.webp') 1x);
-    
+
             @include mq(retina) {
                 background-image: url('../images/offerings/rectangle-img-3@2x_lg.png');
                 background-image: -webkit-image-set(url('../images/offerings/rectangle-img-3@2x_lg.webp') 2x);
             }
         }
-}
- 
-&__title{
-   
-
-    @include mq(mob) {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: calc(33/28);
     }
 
-    @include mq(tab) {
-    font-weight: 700;
-    font-size: 42px;
-    line-height: calc(49/42);
+    &__title {
+        text-align: right;
+
+        @include mq(mob) {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: calc(33/28);
+        }
+
+        @include mq(tab) {
+            font-weight: 700;
+            font-size: 42px;
+            line-height: calc(49/42);
+        }
+
+        @include mq(desk) {
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 1.2;
+        }
     }
 
-    @include mq(desk){
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.2;
-    }
-}
+    &__text {
+        
 
-&__text{
-   
-    
-    @include mq(mob){
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(16/14);
+        @include mq(mob) {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: calc(16/14);
+        }
+
     }
 
-}
+    &__list {
+       
+    }
 
-&__list{
-   
-}
-&__thumd{
-    
-}
+    &__item{
+        
+    }
 
- &__icon{
-    width: 48px;
-    height: 48px;
-    margin-bottom: 8px;
- }
+    &__thumd {
+       
+    }
 
- &__del{
-    
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(21/18);
- }
+    &__icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 8px;
+    }
 
+    &__button {
+        min-width: 106px;
 
- &__order{
-   
- }
-
-
- &__button{
-   
-    max-width: 106px;
-
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.5;
-    background: #FFFFFF;
-    border: 2px solid #7EB101;
-    border-radius: 30px;
- }
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.5;
+        background: #FFFFFF;
+        border: 2px solid #7EB101;
+        border-radius: 30px;
+    }
 }
