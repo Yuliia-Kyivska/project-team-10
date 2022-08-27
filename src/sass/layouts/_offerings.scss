@@ -32,6 +32,35 @@
     }
 
 
+&__img {
+    @include mq(mob) {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 30px;
+        padding-right: 24px;
+        padding-bottom: 41px;
+        padding-top: 41px;
+        width: 201.6px;
+        height: 255.55px;
+        background-color: #FEFEFE;
+        border-radius: 50%;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        padding-top: 150px;
+
+    }
+}
+    &--img {
+        @include mq(tab) {
+            width: 257px;
+            height: 326px;
+            margin-left: 85px;
+            margin-right: 75px;
+        }
+    
+
     &__title {
 
             @include mq(mob) {
