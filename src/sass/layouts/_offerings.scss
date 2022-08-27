@@ -1,6 +1,6 @@
 .offerings {
-     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    
+
     &__container {
         max-width: 1280px;
         margin-left: auto;
@@ -44,7 +44,7 @@
     }
 
     &__title {
-        text-align: right;
+       
 
         @include mq(mob) {
             font-weight: 700;
@@ -66,8 +66,8 @@
     }
 
     &__text {
-        
-
+    
+  
         @include mq(mob) {
             font-weight: 400;
             font-size: 14px;
