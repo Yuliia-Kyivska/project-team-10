@@ -2,6 +2,7 @@
     
 
     &__container {
+       
         max-width: 1280px;
         margin-left: auto;
         margin-right: auto;
@@ -44,8 +45,11 @@
     }
 
     &__title {
-       
+        display: flex;
+        text-align: right;
+        justify-content: flex-start;
 
+        
         @include mq(mob) {
             font-weight: 700;
             font-size: 28px;
@@ -67,7 +71,7 @@
 
     &__text {
     
-  
+        text-align: right;
         @include mq(mob) {
             font-weight: 400;
             font-size: 14px;
@@ -77,11 +81,9 @@
     }
 
     &__list {
-       
     }
 
     &__item{
-        
     }
 
     &__thumd {
