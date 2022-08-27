@@ -1,20 +1,126 @@
 .offerings{
+
+
 &__container{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 60px;
+
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right:auto;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    text-align: right;
+
+    /** Mobile screen **/
+        background-image: url('../images/offerings/rectangle-img-1@1x_sm.png');
+        background-image: -webkit-image-set(url('../images/offerings/rectangle-img-1@1x_sm.webp') 1x);
+    
+        @include mq(retina) {
+            background-image: url('../images/offerings/rectangle-img-1@2x_sm.png');
+            background-image: -webkit-image-set(url('../images/offerings/rectangle-img-1@2x_sm.webp') 2x);
+        }
+    
+        // tablet screen
+        @include mq(tab) {
+            background-image: url('../images/offerings/rectangle-img-2@1x_md.png');
+            background-image: -webkit-image-set(url('../images/offerings/rectangle-img-2@1x_md.webp') 1x);
+    
+            @include mq(retina) {
+                background-image: url('../images/offerings/rectangle-img-2@2x_md.png');
+                background-image: -webkit-image-set(url('../images/offerings/rectangle-img-2@2x_md.webp') 2x);
+            }
+        }
+    
+        // desktop screen
+    
+        @include mq(desk) {
+            padding-top: 200px;
+            padding-bottom: 200px;
+            background-image: url('../images/offerings/rectangle-img-3@1x_lg.png');
+            background-image: -webkit-image-set(url('../images/offerings/rectangle-img-3@1x_lg.webp') 1x);
+    
+            @include mq(retina) {
+                background-image: url('../images/offerings/rectangle-img-3@2x_lg.png');
+                background-image: -webkit-image-set(url('../images/offerings/rectangle-img-3@2x_lg.webp') 2x);
+            }
+        }
+}
+ 
+  
+
+&__title{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 28px;
+
+    @include mq(mob) {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33/28);
+    }
+
+    @include mq(mob) {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(49/42);
+    }
 }
 
-&__
+&__text{
+    padding-left: 20px;
+    padding-right: 28px;
+    margin-bottom: 28px;
+
+    @include mq(mob){
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16/14);
+    }
+
+}
+
 
 &__thumd{
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
  &__icon{
-    display: flex;
     width: 48px;
     height: 48px;
+    margin-bottom: 8px;
+ }
+
+ &__del{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(21/18);
+ }
+
+
+ &__order{
+    padding-left: 20px;
+    padding-right: 48px;
+    margin-bottom: 28px;
+ }
+
+
+ &__button{
+    max-width: 106px;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    background: #FFFFFF;
+    border: 2px solid #7EB101;
+    border-radius: 30px;
  }
 }

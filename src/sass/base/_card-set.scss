@@ -13,7 +13,5 @@
 }
 
 .cards-set-gap {
-  flex-basis: calc(
-    (100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item)
-  );
+  flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item));
 }
