@@ -1,5 +1,6 @@
 @import './utils/mixin';
 @import './utils/variables';
+@import './utils/visually-hidden';
 
 @import './base/reset';
 @import './base/common';
@@ -7,6 +8,8 @@
 @import './base/section';
 @import './base/card-set';
 
+@import './components/swiper.scss';
+@import './components/swiper-nav.scss';
 @import './components/button';
 @import './components/signup';
 @import './components/mobile-menu';
@@ -16,4 +19,5 @@
 @import './layouts/offerings';
 @import './layouts/favorites';
 @import './layouts/customers-say';
+@import './layouts/footer';
 @import './layouts/subscribe';
