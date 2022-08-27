@@ -1,15 +1,16 @@
-.card-set {
+.cards-set {
+  //gap: var(--card-set-gap);
+  margin-left: calc(-1*var(--card-set-gap));
+  margin-top: calc(-1*var(--card-set-gap));
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
 
   @include mq(tab) {
     --card-item: 2;
   }
 
   @include mq(desk) {
-    --card-item: 4;
+    --card-item: 3;
   }
 }
 
@@ -37,3 +38,8 @@
 //.cards-set__item {
 //flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item));
 //}
+
+//.cards-set-gap {
+//  flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item));
+//}
+
