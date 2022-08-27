@@ -1,55 +1,48 @@
 .offerings {
     
-
     &__container {
-       
-        max-width: 1280px;
+        position: relative;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 43px;
 
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
 
-        /** Mobile screen **/
-        background-image: url('../images/offerings/rectangle-img-1@1x_sm.png');
-        background-image: -webkit-image-set(url('../images/offerings/rectangle-img-1@1x_sm.webp') 1x);
-
+        background-image: url(../images/offerings/rectangle-img-1@1x_sm.png);
+        
+        @include mq(retina){
+            background-image: url(../images/offerings/rectangle-img-1@2x_sm.png);
+        }
+        
+        @include mq(tab){
+                
+        background-image: url(../images/offerings/rectangle-img-2@1x_md.png);
+            
         @include mq(retina) {
-            background-image: url('../images/offerings/rectangle-img-1@2x_sm.png');
-            background-image: -webkit-image-set(url('../images/offerings/rectangle-img-1@2x_sm.webp') 2x);
+        background-image: url(../images/offerings/rectangle-img-2@2x_md.png);
+                }
         }
 
-        // tablet screen
-        @include mq(tab) {
-            background-image: url('../images/offerings/rectangle-img-2@1x_md.png');
-            background-image: -webkit-image-set(url('../images/offerings/rectangle-img-2@1x_md.webp') 1x);
-
-            @include mq(retina) {
-                background-image: url('../images/offerings/rectangle-img-2@2x_md.png');
-                background-image: -webkit-image-set(url('../images/offerings/rectangle-img-2@2x_md.webp') 2x);
-            }
+        @include mq(desk)  {             
+        background-image: url(../images/offerings/rectangle-img-3@1x_lg.png);
+                
+        @include mq(retina) {
+        background-image: url(../images/offerings/rectangle-img-3@2x_lg.png);
+        }
         }
 
-        // desktop screen
-
-        @include mq(desk) {
-            background-image: url('../images/offerings/rectangle-img-3@1x_lg.png');
-            background-image: -webkit-image-set(url('../images/offerings/rectangle-img-3@1x_lg.webp') 1x);
-
-            @include mq(retina) {
-                background-image: url('../images/offerings/rectangle-img-3@2x_lg.png');
-                background-image: -webkit-image-set(url('../images/offerings/rectangle-img-3@2x_lg.webp') 2x);
-            }
-        }
     }
 
     &__title {
-        display: flex;
-        text-align: right;
-        justify-content: flex-start;
-
         
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 97px;
+        
+
         @include mq(mob) {
             font-weight: 700;
             font-size: 28px;
@@ -71,23 +64,16 @@
 
     &__text {
     
-        text-align: right;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
         @include mq(mob) {
             font-weight: 400;
             font-size: 14px;
             line-height: calc(16/14);
         }
 
-    }
-
-    &__list {
-    }
-
-    &__item{
-    }
-
-    &__thumd {
-       
     }
 
     &__icon {
