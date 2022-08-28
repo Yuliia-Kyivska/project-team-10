@@ -100,7 +100,7 @@
             overflow: hidden;
         }
 
-        @include mq(tab) {
+        @include mq(mob-only) {
             position: absolute;
             width: 1px;
             height: 1px;
