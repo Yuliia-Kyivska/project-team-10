@@ -49,15 +49,14 @@
 }
 
 .offerings__img-container {
-  max-width: 280px;
-
+   
   @include mq(tab) {
+    max-width: 357px;
     display: flex;
     align-items: baseline;
   }
 
   @include mq(desk) {
-    max-width: 550px;
     display: flex;
     align-items: baseline;
   }
