@@ -1,6 +1,5 @@
 .offerings {
     margin: 0 auto;
-    margin-top: 420px;
     padding-top: 41px;
     padding-bottom: 60px;
     background-image: url(../images/offerings/fon-mob@1x_sm.png);
@@ -13,7 +12,6 @@
 
     @include mq(tab) {
         max-width: 768px;
-        margin-top: 450px;
         padding: 0 0 100px 0;
         background-image: url(../images/offerings/fon-tab@1x_md.png);
         background-repeat: no-repeat;
@@ -167,6 +165,39 @@
     }
 }
 
+.offerings__icons{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.offerings__icon-title{
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(21px / 18px);
+}
+
+.offerings__icon-text{
+    @include mq(tab) {
+            margin-bottom: 40px;
+        }
+    
+                @include mq(mob) {
+            margin-bottom: 28px;
+        }
+}
+
+/** list **/
+
+
 /** Read more icon **/
 .info__conteiner {
     display: flex;
@@ -180,6 +211,10 @@
       font-weight: 400;
       font-size: 13.6667px;
       line-height: 150%;
+
+    @include mq(desk) {
+            display: none;
+        }
   }
 
   .info__icon {
@@ -189,7 +224,7 @@
       justify-content: center;
       margin-left: 24px;
 
-      @include mq(onDesk){
+      @include mq(desk){
         display: none;
       }
 
