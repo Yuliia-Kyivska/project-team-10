@@ -1,0 +1,89 @@
+.signup-form {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+
+    @include mq(tab) {
+        
+        margin-bottom: 12px
+    }
+    @include mq(desk) {
+        
+        justify-content: flex-end;
+    }
+}
+
+.signup-form__input {
+    height: 42px;
+    width: 279px;
+    padding: 12px 61.5px 12px 12px;
+    border: 0.854167px solid #FFE550;
+    border-radius: 30px;
+    outline: transparent;
+}
+.signup-form__input:not(:placeholder-shown):required:valid {
+border-color: #7EB101;
+}
+.signup-form__input:not(:placeholder-shown):required:invalid {
+    border-color: #FF705D;
+    margin-bottom: 4px;
+}
+.signup-form__input:not(:placeholder-shown):required:invalid + .signup-form__input-invalid {
+    display: inline-flex;
+    align-items: center;
+    @include mq(tab) {
+        display: inline;
+    }
+}
+.signup-form__input::placeholder {
+    font-size: 12px;
+    color: #505050;
+    line-height: 1.5;
+}
+.signup-form__input-invalid {
+    display:none;
+
+    color: #FF705D;
+    font-size: 10px;
+    line-height: 1.5;
+}
+.signup-form__input-icon {
+margin-right: 4px;
+width: 12px;
+height:12px;
+}
+
+.signup-form__button {
+    display: block;
+    margin-left: auto;
+    height: 42px;
+    width: 103px;
+    cursor: pointer;
+    
+    margin-bottom: 20px;
+    @include mq(tab) {
+        margin-left: 13px;
+        margin-bottom: 0;
+    }
+
+    font-family: 'Roboto';
+    color: #2C2C2C;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+
+    background: #FFFFFF;
+    border: 0.854167px solid #7EB101;
+    border-radius: 30px;
+}
+.signup-form__button:hover,
+.signup-form__button:focus {
+    background-color: #FFE550;
+}
+
+.signup-tab {
+    @include mq(tab) {
+        display: flex;
+    }
+}
