@@ -7,13 +7,13 @@
     display: none;
     }
   @include mq(tab-only) {
-    max-width: 336px;
+    max-width: 320px;
     position: absolute;
     bottom: 0px;
     right: 0px;
   }
     @include mq(desk) {
-      max-width: 608px;}
+      max-width: 580px;}
 
 }
 

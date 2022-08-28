@@ -72,3 +72,9 @@
           background-color: #B5FF00;
       }
   }
+  .header .order-button {
+    @include mq (mob-only) {
+        display: none; 
+    }
+   
+  }
