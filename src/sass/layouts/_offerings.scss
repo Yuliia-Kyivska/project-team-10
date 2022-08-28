@@ -58,12 +58,13 @@
     display: flex;
     align-items: baseline;
   }
+
 }
 
 .offerings__img-container--bottom {
   margin-bottom: 60px;
 
-  @include mq(desk) {
+  @include mq (desk) {
     margin-bottom: 0;
   }
 }
@@ -194,10 +195,15 @@
   }
 }
 
+/** list **/
+
+
+/** Read more icon **/
 .info__conteiner {
   display: flex;
   align-items: center;
   padding-bottom: 60px;
+
 }
 
 .info__title {
@@ -205,6 +211,7 @@
   font-weight: 400;
   font-size: 13.6667px;
   line-height: 150%;
+
   @include mq(desk) {
     display: none;
   }
@@ -220,6 +227,7 @@
   @include mq(desk) {
     display: none;
   }
+
 }
 
 .info__icon--icon {
