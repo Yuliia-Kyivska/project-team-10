@@ -54,13 +54,11 @@
     @include mq(tab) 
     {
         display: flex;
-        // justify-content: center;
         align-items: baseline;
     }
  
         @include mq(desk) {
             display: flex;
-            // justify-content: center;
             align-items: baseline;
         }
     
@@ -114,5 +112,33 @@
             clip: rect(0 0 0 0);
             overflow: hidden;
         }
+    }
+}
+
+.offerings__main {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+   @include mq(tab)
+    {
+        gap: 0;
+    }
+
+    @include mq(desk) {
+        max-width: 573px;
+        gap: 0;
+        margin-left: 90px;
+        justify-content: center;
+    }
+}
+
+.offerings__title {
+    font-size: 28px;
+    line-height: 1.2;
+
+    @include mq(tab) {
+        margin-bottom: 20px;
+        font-size: 42px;
     }
 }
