@@ -1,1 +1,0 @@
-{"mappings":"AACC,IAAIA,OAAQ,UAAU,CACnBC,WAAW,CACTC,OAAO,oBACPC,OAAO","sources":["src/js/swiper-slider.js"],"sourcesContent":["\n new Swiper ('.swiper',{\n    navigation:{\n      nextEl:'.swiper__btn-next',\n      prevEl:'.swiper__btn-prev'\n    },\n  })"],"names":["Swiper","navigation","nextEl","prevEl"],"version":3,"file":"index.ce4edc8e.js.map"}
