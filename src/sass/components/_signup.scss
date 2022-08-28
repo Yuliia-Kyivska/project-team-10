@@ -3,17 +3,24 @@
     flex-direction: column;
 
     margin-bottom: 20px;
+
+    @include mq(tab) {
+        
+        margin-bottom: 12px
+    }
+    @include mq(desk) {
+        
+        justify-content: flex-end;
+    }
 }
 
 .signup-form__input {
     height: 42px;
-    width: 100%;
+    width: 279px;
     padding: 12px 61.5px 12px 12px;
     border: 0.854167px solid #FFE550;
     border-radius: 30px;
     outline: transparent;
-
-    margin-bottom: 20px;
 }
 .signup-form__input:not(:placeholder-shown):required:valid {
 border-color: #7EB101;
@@ -25,7 +32,9 @@ border-color: #7EB101;
 .signup-form__input:not(:placeholder-shown):required:invalid + .signup-form__input-invalid {
     display: inline-flex;
     align-items: center;
-    margin-bottom: 20px;
+    @include mq(tab) {
+        display: inline;
+    }
 }
 .signup-form__input::placeholder {
     font-size: 12px;
@@ -45,11 +54,18 @@ width: 12px;
 height:12px;
 }
 
-
 .signup-form__button {
+    display: block;
+    margin-left: auto;
     height: 42px;
     width: 103px;
-    margin-left: auto;
+    cursor: pointer;
+    
+    margin-bottom: 20px;
+    @include mq(tab) {
+        margin-left: 13px;
+        margin-bottom: 0;
+    }
 
     font-family: 'Roboto';
     color: #2C2C2C;
@@ -64,4 +80,10 @@ height:12px;
 .signup-form__button:hover,
 .signup-form__button:focus {
     background-color: #FFE550;
+}
+
+.signup-tab {
+    @include mq(tab) {
+        display: flex;
+    }
 }

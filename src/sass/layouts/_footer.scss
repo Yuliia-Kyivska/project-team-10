@@ -4,29 +4,56 @@
     margin-left: auto;
     margin-right: auto;
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url(../images/footer/fruit-apple@1x_mob.png), 
+    url(../images/footer/fruit-apple@1x_mob.webp), 
+    url(../images/footer/fruit-orange@1x_mob.png),
+    url(../images/footer/fruit-orange@1x_mob.webp),
+    url(../images/footer/fruit-set@1x_mob.png),
+    url(../images/footer/fruit-set@1x_mob.webp);
 
-    background-image: url(../images/footer/footer-fruit@1x_mob.png);
+    background-repeat: no-repeat;
+    background-position: top 132px left 0, top 132px left 0, top 0 right 0, top 0 right 0, bottom 0 left 64%, bottom 0 left 64%;
+    background-size: 110px 116px, 110px 116px, 104px 259px, 104px 259px, 253px 66px, 253px 66px, cover;
 
     @include mq(retina) {
-        background-image: url(../images/footer/footer-fruit@2x_mob.png);
-    }
-
-    @include mq(tab) {
-        background-image: url(../images/footer/footer-fruit@1x_tab.png);
-
-        @include mq(retina) {
-            background-image: url(../images/footer/footer-fruit@2x_tab.png);
+            background-image: url(../images/footer/fruit-apple@2x_mob.png),
+                url(../images/footer/fruit-apple@2x_mob.webp),
+                url(../images/footer/fruit-orange@2x_mob.png),
+                url(../images/footer/fruit-orange@2x_mob.webp),
+                url(../images/footer/fruit-set@2x_mob.png),
+                url(../images/footer/fruit-set@2x_mob.webp);
         }
-    }
+    @include mq(tab) {
+        padding: 118px 0 100px;
 
-    @include mq(desk) {
-        background-image: url(../images/footer/footer-fruit@1x_desk.png);
+        background-image: url(../images/footer/fruit-orange@1x_tab.png),
+            url(../images/footer/fruit-orange@1x_tab.webp),
+            url(../images/footer/fruit-set@1x_tab.png),
+            url(../images/footer/fruit-set@1x_tab.webp);
+
+        background-position: top 0 right 0, top 0 right 0, bottom 0 left 50%, bottom 0 left 50%;
+        background-size: 203px 365px, 203px 365px, 785px 141px, 785px 141px, cover;
 
         @include mq(retina) {
-            background-image: url(../images/footer/footer-fruit@2x_desk.png);
+                background-image: url(../images/footer/fruit-orange@2x_tab.png),
+                    url(../images/footer/fruit-orange@2x_tab.webp),
+                    url(../images/footer/fruit-set@2x_tab.png),
+                    url(../images/footer/fruit-set@2x_tab.webp);
+            }
+        }
+    @include mq(desk) {
+
+        padding: 100px 0 ;
+
+        background-image: url(../images/footer/fruit-set@1x_desk.png),
+            url(../images/footer/fruit-set@1x_desk.webp);
+
+        background-position: bottom 0 left 77%;
+        background-size: 1211px 266px, 1211px 266px, cover;
+    
+        @include mq(retina) {
+            background-image: url(../images/footer/fruit-set@2x_desk.png),
+                url(../images/footer/fruit-set@2x_desk.webp);
         }
     }
 }
@@ -45,15 +72,49 @@
     left: 16px;
     }
 }
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @include mq(desk) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.footer__list:not(:last-child) {
+    margin-bottom: 60px;
+    @include mq(desk) {
+    margin-bottom: 80px;
+        }
+}
+
+.footer__list:last-child {
+    @include mq(tab) {
+        gap: 100px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
 .footer__menu {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 4px;
     padding-left: 150px;
+
+    @include mq(tab) {
+        flex-direction: row;
+        }
+    @include mq(tab) {
+        padding-top: 18px;
+    }
 }
 .footer__menu-item:not(:last-child) {
     margin-bottom: 20px;
+    @include mq(tab) {
+        margin-right: 28px;
+    }
 }
 .footer__menu-item:last-child {
     margin-bottom: 40px;
@@ -76,25 +137,24 @@
     font-size: 10px;
     line-height: 1.2;
     color: #2C2C2C;
+    @include mq(tab) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
 }
 
 .footer__agreement-link,
 .footer__privacy-link {
 color: #7EB101;
 }
-.footer__list {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-.footer__list:not(:last-child) {
-   margin-bottom: 60px; 
-}
 
 .footer__privacy {
     display: flex;
     justify-content: space-between;
     margin-bottom: auto;
+    @include mq(tab) {
+        gap:20px;
+    }
 }
 .footer__licence {
     text-align: center;

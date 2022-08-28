@@ -11,6 +11,8 @@
     
     @include mq(tab) {
         width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
     
     @include mq(desk) {
@@ -24,8 +26,9 @@
     padding-bottom: 60px;
 }
 
-.card-set {
-    
+.cards-set {
+    justify-content: center;
+
     @include mq(desk) {
         --card-item: 3;
     }
@@ -52,12 +55,6 @@
     }
 }
 
-.food__item {
-    @include mq(mob-only) {
-        display: flex;
-        justify-content: center;
-    }
-}
 .food__item:nth-child(n + 4) {
     
     @include mq(mob-only) {
