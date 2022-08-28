@@ -1,91 +1,122 @@
 <header class="header">
-    <div class="container header__container">
-        <a href="index.html" class="link logo nav__logo">
-            <picture>
-                <!--Desktop screen-->
-                <source media="(min-width: 1200px)" srcset="./images/logo/logo@1x.png 1x, ./images/logo/logo@2x.png 2x"
-                    type="image/webp" />
-                <source media="(min-width: 1200px)" srcset="./images/logo/logo@1x.png 1x, ./images/logo/logo@2x.png 2x"
-                    type="image/jpeg" />
-        
-                <!--tablet screen-->
-                <source media="(min-width: 768px)" srcset="./images/logo/logo@1x.png 1x, ./images/logo/logo@2x.png 2x"
-                    type="image/webp" />
-                <source media="(min-width: 768px)" srcset="./images/logo/logo@1x.png 1x, ./images/logo/logo@2x.png 2x"
-                    type="image/jpeg" />
-                <!--mobile screen-->
-                <source media="(max-width: 767px)" srcset="./images/logo/logo@1x.png 1x, ./images/logo/logo@2x.png 2x"
-                    type="image/webp" />
-                <source media="(min-width: 768px)" srcset="./images/logo/logo@1x.png 1x, ./images/logo/logo@2x.png 2x"
-                    type="image/jpeg" />
-        
-                <img src="./images/logo/logo@1x.png" width="66" height="52" alt="логотип" />
-            </picture>
-        </a>
-        <nav class="nav">
-            <!-- <button class="mob__burger" type="button" data-menu-open aria-expanded="false"
+  <div class="container header__container">
+    <a href="index.html" class="link logo nav__logo">
+      <picture>
+        <!--Desktop screen-->
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/logo/logo@1x.png 1x, ./images/logo/logo@2x.png 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/logo/logo@1x.png 1x, ./images/logo/logo@2x.png 2x"
+          type="image/jpeg"
+        />
+
+        <!--tablet screen-->
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/logo/logo@1x.png 1x, ./images/logo/logo@2x.png 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/logo/logo@1x.png 1x, ./images/logo/logo@2x.png 2x"
+          type="image/jpeg"
+        />
+        <!--mobile screen-->
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/logo/logo@1x.png 1x, ./images/logo/logo@2x.png 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/logo/logo@1x.png 1x, ./images/logo/logo@2x.png 2x"
+          type="image/jpeg"
+        />
+
+        <img
+          src="./images/logo/logo@1x.png"
+          width="66"
+          height="52"
+          alt="логотип"
+        />
+      </picture>
+    </a>
+    <nav class="nav">
+      <!-- <button class="mob__burger" type="button" data-menu-open aria-expanded="false"
             aria-controls="menu-container">
                 <svg width="23" height="16" class="header__menu">
                     <use href="./images/icons.svg#icon-header_menu"></use>
                 </svg>
             </button> -->
-            <ul class="list nav__list">
-                <li class="nav__item">
-                    <a href="index.html" class="nav__link nav__link--active link">Home</a>
-                </li>
+      <ul class="list nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link nav__link--active link">Home</a>
+        </li>
 
-                <li class="nav__item">
-                    <a href="" class="nav__link link">About</a>
-                </li>
-                <li class="nav__item">
-                    <a href="" class="nav__link link">Service</a>
-                </li>
-                <li class="nav__item">
-                    <a href="" class="nav__link link">Menu</a>
-                </li>
-                <li class="nav__item">
-                    <a href="" class="nav__link link">Contact</a>
-                </li>
-            </ul>
+        <li class="nav__item">
+          <a href="" class="nav__link link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link link">Service</a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link link">Menu</a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link link">Contact</a>
+        </li>
+      </ul>
 
-            <!-- кнопка -->
-            <button type="button" class="nav__button" aria-expanded="false"
-                data-menu-button>Order now
-            </button>
-            
-        </nav>
-        
-        <!-- Моб меню -->
-     <div class="mob__menu" data-menu>
-        <button class="mob__burger" type="button" data-menu-open>
-            <svg width="23" height="16" class="header__menu">
-                <use href="./images/icons.svg#icon-header_menu"></use>
+      <!-- кнопка -->
+      <button
+        type="button"
+        class="order-button"
+        aria-expanded="false"
+        data-menu-button
+      >
+        Order now
+      </button>
+    </nav>
+
+    <!-- Моб меню -->
+    <div class="mob__menu" data-menu>
+      <button class="mob__burger" type="button" data-menu-open>
+        <svg width="23" height="16" class="header__menu">
+          <use href="./images/icons.svg#icon-header_menu"></use>
+        </svg>
+      </button>
+      <ul class="list mob__list">
+        <li class="mob__item">
+          <button
+            class="mob__cross"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+          >
+            <svg width="24" height="24" class="header__cross">
+              <use href="./images/icons.svg#icon-close_menu"></use>
             </svg>
-        </button>
-            <ul class="list mob__list">
-                <li class="mob__item">
-                    <button class="mob__cross" type="button"  aria-expanded="false"
-            aria-controls="menu-container">
-                        <svg width="24" height="24" class="header__cross">
-                            <use href="./images/icons.svg#icon-close_menu"></use>
-                        </svg>
-                    </button>
-                    <a href="index.html" class="mob__link nav__link--active link">Home</a>
-                </li>
-        
-                <li class="mob__item">
-                    <a href="" class="mob__link link">About</a>
-                </li>
-                <li class="mob__item">
-                    <a href="" class="mob__link link">Service</a>
-                </li>
-                <li class="mob__item">
-                    <a href="" class="mob__link link">Menu</a>
-                </li>
-                <li class="mob__item">
-                    <a href="" class="mob__link link">Contact</a>
-                </li>
-            </ul>
-     </div>
-        </div>
-        </header>
+          </button>
+          <a href="index.html" class="mob__link nav__link--active link">Home</a>
+        </li>
+
+        <li class="mob__item">
+          <a href="" class="mob__link link">About</a>
+        </li>
+        <li class="mob__item">
+          <a href="" class="mob__link link">Service</a>
+        </li>
+        <li class="mob__item">
+          <a href="" class="mob__link link">Menu</a>
+        </li>
+        <li class="mob__item">
+          <a href="" class="mob__link link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
