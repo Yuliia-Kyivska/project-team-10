@@ -1,152 +1,228 @@
 .offerings {
-    margin: 0 auto;
-    margin-top: 420px;
-    padding-top: 41px;
-    padding-bottom: 60px;
-    background-image: url(../images/offerings/fon-mob@1x_sm.png);
+  margin: 0 auto;
+  padding-top: 41px;
+  padding-bottom: 60px;
+  background-image: url(../images/offerings/fon-mob@1x_sm.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @include mq(retina) {
+    background-image: url(../images/offerings/fon-mob@2x_sm.png);
+  }
+
+  @include mq(tab) {
+    max-width: 768px;
+    padding: 0 0 100px 0;
+    background-image: url(../images/offerings/fon-tab@1x_md.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
 
     @include mq(retina) {
-        background-image: url(../images/offerings/fon-mob@2x_sm.png);
+      background-image: url(../images/offerings/fon-tab@2x_md.png);
     }
+  }
 
-    @include mq(tab) {
-        max-width: 768px;
-        margin-top: 450px;
-        padding: 0 0 100px 0;
-        background-image: url(../images/offerings/fon-tab@1x_md.png);
-        background-repeat: no-repeat;
+  @include mq(desk) {
+    max-width: 1280px;
+    margin-top: 500px;
+    padding: 171px 0 75px 0;
+    background-image: url(../images/offerings/fon-desk@1x_lg.png);
+    background-repeat: no-repeat;
 
-        @include mq(retina) {
-            background-image: url(../images/offerings/fon-tab@2x_md.png);
-        }
+    @include mq(retina) {
+      background-image: url(../images/offerings/fon-desk@2x_lg.png);
     }
-
-    @include mq(desk) {
-        max-width: 1280px;
-        margin-top: 500px;
-        padding: 171px 0 75px 0;
-        background-image: url(../images/offerings/fon-desk@1x_lg.png);
-        background-repeat: no-repeat;
-
-        @include mq(retina) {
-            background-image: url(../images/offerings/fon-desk@2x_lg.png);
-        }
-    }
+  }
 }
 
 .offerings__main-container {
-    @include mq(tab-only) {
-        padding-top: 115px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+  @include mq(tab-only) {
+    padding-top: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    @include mq(desk) {
-        display: flex;
-        flex-direction: row;
-    }
+  @include mq(desk) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .offerings__img-container {
-    @include mq(tab) {
-        display: flex;
-        align-items: baseline;
-    }
+  @include mq(tab) {
+    display: flex;
+    align-items: baseline;
+  }
 
-    @include mq(desk) {
-        display: flex;
-        align-items: baseline;
-    }
-
+  @include mq(desk) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .offerings__img-container--bottom {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 
-    @include mq (desk) {
-        margin-bottom: 0;
-    }
+  @include mq(desk) {
+    margin-bottom: 0;
+  }
 }
 
 .offerings__img {
-    margin: 0 auto;
+  margin: 0 auto;
 
-    &--middle {
-        margin-left: 29px;
-        margin-right: 44px;
-        margin-bottom: 67px;
+  &--middle {
+    margin-left: 29px;
+    margin-right: 44px;
+    margin-bottom: 67px;
+  }
+
+  &--small {
+    margin-bottom: 68px;
+  }
+
+  &--middle,
+  &--small {
+    @include mq(desk) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
     }
 
-    &--small {
-        margin-bottom: 68px;
+    @include mq(mob-only) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
     }
-
-    &--middle,
-    &--small {
-        @include mq(desk) {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            margin: -1px;
-            border: 0;
-            padding: 0;
-            white-space: nowrap;
-            clip-path: inset(100%);
-            clip: rect(0 0 0 0);
-            overflow: hidden;
-        }
-
-        @include mq(mob-only) {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            margin: -1px;
-            border: 0;
-            padding: 0;
-            white-space: nowrap;
-            clip-path: inset(100%);
-            clip: rect(0 0 0 0);
-            overflow: hidden;
-        }
-    }
+  }
 }
 
 .offerings__main {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 
-    @include mq(tab) {
-        gap: 0;
-    }
+  @include mq(tab) {
+    gap: 0;
+  }
 
-    @include mq(desk) {
-        max-width: 573px;
-        gap: 0;
-        margin-left: 90px;
-        justify-content: center;
-    }
+  @include mq(desk) {
+    max-width: 573px;
+    gap: 0;
+    margin-left: 90px;
+    justify-content: center;
+  }
 }
 
 .offerings__title {
-    font-size: 28px;
-    line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.2;
 
-    @include mq(tab) {
-        margin-bottom: 20px;
-        font-size: 42px;
-    }
+  @include mq(tab) {
+    margin-bottom: 20px;
+    font-size: 42px;
+  }
 }
 
 .offerings__text {
-    font-size: 14px;
-    line-height: calc(16 / 14);
+  font-size: 14px;
+  line-height: calc(16 / 14);
 
-    @include mq(tab) {
-        font-size: 16px;
-        line-height: 1.5;
-    }
+  @include mq(tab) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.offerings__list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  @include mq(tab) {
+    margin-top: 40px;
+    flex-direction: row;
+    gap: 116px;
+  }
+
+  @include mq(desk) {
+    gap: 67px;
+  }
+}
+
+.offerings__icons {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.offerings__icon-title {
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(21px / 18px);
+}
+
+.offerings__icon-text {
+  @include mq(tab) {
+    margin-bottom: 40px;
+  }
+
+  @include mq(mob) {
+    margin-bottom: 28px;
+  }
+}
+
+.info__conteiner {
+  display: flex;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.info__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.6667px;
+  line-height: 150%;
+  @include mq(desk) {
+    display: none;
+  }
+}
+
+.info__icon {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 24px;
+
+  @include mq(desk) {
+    display: none;
+  }
+}
+
+.info__icon--icon {
+  margin-left: 8px;
+  background-color: transparent;
 }
