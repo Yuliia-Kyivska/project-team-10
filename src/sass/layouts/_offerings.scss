@@ -142,3 +142,13 @@
         font-size: 42px;
     }
 }
+
+.offerings__text{
+     font-size: 14px;
+     line-height: calc(16 / 14);
+
+     @include mq(tab) {
+     font-size: 16px;
+     line-height: 1.5;
+     }
+}
