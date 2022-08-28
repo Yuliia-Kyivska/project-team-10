@@ -183,4 +183,13 @@
   }
 
   .info__icon {
-      d
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+  }
+
+.info__icon--icon {
+    margin-left: 8px;
+    background-color: transparent;
+  }
