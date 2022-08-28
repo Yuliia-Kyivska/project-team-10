@@ -150,3 +150,16 @@
         line-height: 1.5;
     }
 }
+
+.offerings__bottom-part {
+    display: flex;
+    gap: 24px;
+
+    @include mq(tab) {
+        margin-top: 40px;
+    }
+
+   @include mq(desk) {
+        margin-top: 32px;
+    }
+}
