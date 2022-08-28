@@ -1,126 +1,152 @@
-.offerings{
+.offerings {
+    margin: 0 auto;
+    margin-top: 420px;
+    padding-top: 41px;
+    padding-bottom: 60px;
+    background-image: url(../images/offerings/fon-mob@1x_sm.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
+    @include mq(retina) {
+        background-image: url(../images/offerings/fon-mob@2x_sm.png);
+    }
 
-&__container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-right: 20px;
-    padding-left: 20px;
+    @include mq(tab) {
+        max-width: 768px;
+        margin-top: 450px;
+        padding: 0 0 100px 0;
+        background-image: url(../images/offerings/fon-tab@1x_md.png);
+        background-repeat: no-repeat;
+
+        @include mq(retina) {
+            background-image: url(../images/offerings/fon-tab@2x_md.png);
+        }
+    }
+
+    @include mq(desk) {
+        max-width: 1280px;
+        margin-top: 500px;
+        padding: 171px 0 75px 0;
+        background-image: url(../images/offerings/fon-desk@1x_lg.png);
+        background-repeat: no-repeat;
+
+        @include mq(retina) {
+            background-image: url(../images/offerings/fon-desk@2x_lg.png);
+        }
+    }
+}
+
+.offerings__main-container {
+    @include mq(tab-only) {
+        padding-top: 115px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @include mq(desk) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.offerings__img-container {
+    @include mq(tab) {
+        display: flex;
+        align-items: baseline;
+    }
+
+    @include mq(desk) {
+        display: flex;
+        align-items: baseline;
+    }
+
+}
+
+.offerings__img-container--bottom {
     margin-bottom: 60px;
 
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right:auto;
+    @include mq (desk) {
+        margin-bottom: 0;
+    }
+}
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
-    text-align: right;
+.offerings__img {
+    margin: 0 auto;
 
-    /** Mobile screen **/
-        background-image: url('../images/offerings/rectangle-img-1@1x_sm.png');
-        background-image: -webkit-image-set(url('../images/offerings/rectangle-img-1@1x_sm.webp') 1x);
-    
-        @include mq(retina) {
-            background-image: url('../images/offerings/rectangle-img-1@2x_sm.png');
-            background-image: -webkit-image-set(url('../images/offerings/rectangle-img-1@2x_sm.webp') 2x);
-        }
-    
-        // tablet screen
-        @include mq(tab) {
-            background-image: url('../images/offerings/rectangle-img-2@1x_md.png');
-            background-image: -webkit-image-set(url('../images/offerings/rectangle-img-2@1x_md.webp') 1x);
-    
-            @include mq(retina) {
-                background-image: url('../images/offerings/rectangle-img-2@2x_md.png');
-                background-image: -webkit-image-set(url('../images/offerings/rectangle-img-2@2x_md.webp') 2x);
-            }
-        }
-    
-        // desktop screen
-    
+    &--middle {
+        margin-left: 29px;
+        margin-right: 44px;
+        margin-bottom: 67px;
+    }
+
+    &--small {
+        margin-bottom: 68px;
+    }
+
+    &--middle,
+    &--small {
         @include mq(desk) {
-            padding-top: 200px;
-            padding-bottom: 200px;
-            background-image: url('../images/offerings/rectangle-img-3@1x_lg.png');
-            background-image: -webkit-image-set(url('../images/offerings/rectangle-img-3@1x_lg.webp') 1x);
-    
-            @include mq(retina) {
-                background-image: url('../images/offerings/rectangle-img-3@2x_lg.png');
-                background-image: -webkit-image-set(url('../images/offerings/rectangle-img-3@2x_lg.webp') 2x);
-            }
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
         }
-}
- 
-  
 
-&__title{
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 28px;
-
-    @include mq(mob) {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: calc(33/28);
-    }
-
-    @include mq(mob) {
-    font-weight: 700;
-    font-size: 42px;
-    line-height: calc(49/42);
+        @include mq(mob-only) {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
     }
 }
 
-&__text{
-    padding-left: 20px;
-    padding-right: 28px;
-    margin-bottom: 28px;
-
-    @include mq(mob){
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(16/14);
-    }
-
-}
-
-
-&__thumd{
+.offerings__main {
     display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    @include mq(tab) {
+        gap: 0;
+    }
+
+    @include mq(desk) {
+        max-width: 573px;
+        gap: 0;
+        margin-left: 90px;
+        justify-content: center;
+    }
 }
 
- &__icon{
-    width: 48px;
-    height: 48px;
-    margin-bottom: 8px;
- }
+.offerings__title {
+    font-size: 28px;
+    line-height: 1.2;
 
- &__del{
-    margin-bottom: 16px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(21/18);
- }
+    @include mq(tab) {
+        margin-bottom: 20px;
+        font-size: 42px;
+    }
+}
 
+.offerings__text {
+    font-size: 14px;
+    line-height: calc(16 / 14);
 
- &__order{
-    padding-left: 20px;
-    padding-right: 48px;
-    margin-bottom: 28px;
- }
-
-
- &__button{
-    max-width: 106px;
-
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.5;
-    background: #FFFFFF;
-    border: 2px solid #7EB101;
-    border-radius: 30px;
- }
+    @include mq(tab) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
 }
