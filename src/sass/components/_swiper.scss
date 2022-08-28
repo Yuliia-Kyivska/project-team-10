@@ -1,15 +1,127 @@
-/**
- * Swiper 8.3.2
- * Most modern mobile touch slider and framework with hardware accelerated transitions
- * https://swiperjs.com
- *
- * Copyright 2014-2022 Vladimir Kharlampidi
- *
- * Released under the MIT License
- *
- * Released on: July 26, 2022
- */
+.swiper-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq(mob-only) {
+    display: none;
+    }
+  @include mq(tab-only) {
+    max-width: 336px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+    @include mq(desk) {
+      max-width: 608px;}
 
+}
+
+.hero__swiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mq(tab) {
+    border-radius: 50%;
+
+    border: 16px solid #ffe550;
+  }
+  @include mq(desk) {
+
+    border: 14px solid #ffe550;
+
+  }
+  }
+
+
+.hero__img img{
+align-self: center;
+
+@include mq(tab) {
+
+
+
+}
+  @include mq(desk) {
+    width: 580px;
+
+
+
+}
+}
+
+.swiper-button-next {
+  width: 34px;
+  height: 28px;
+  cursor: pointer;
+  fill: #2c2c2c;;
+  position: absolute;
+  display: flex;
+  right: -13px;
+  padding: 6px 13px 6px 9px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);}
+  @include mq(desk) {
+    width: 48px;
+    height: 40px;  
+    &:hover {
+    fill: #7EB101;
+  }
+}}
+.swiper-button-prev {
+  width: 34px;
+  height: 28px;
+
+ 
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  left: -13px;
+  fill: #2c2c2c;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+padding: 6px 13px 6px 9px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
+  @include mq(desk) {
+    width: 48px;
+    height: 40px;
+    &:hover {
+      fill: #7EB101;
+    }
+  }
+}
+
+
+.swiper__icon {
+  color: currentColor;
+  border: none;
+  width: 27px;
+  height: 21px;
+  @include mq(desk) {
+    width: 41px;
+    height: 38px;
+
+
+  }
+}
+
+
+
+// Стилі з бібліотеки
 
 @at-root {
   @font-face {

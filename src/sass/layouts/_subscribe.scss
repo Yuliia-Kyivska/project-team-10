@@ -1,19 +1,15 @@
-.subscribe {
+.subscribe__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-right: 20px;
-  padding-left: 20px;
+
   padding-bottom: 60px;
   @include mq(tab) {
-    padding-right: 32px;
-    padding-left: 32px;
+
     padding-bottom: 100px;
   }
   @include mq(desk) {
-    padding-bottom: 64px;
-    padding-right: 16px;
     padding-left: 16px;
     flex-direction: row-reverse;
   }
@@ -36,17 +32,16 @@
   display: flex;
   flex-direction: column;
   @include mq(tab) {
-    max-width: 656px;
-  }
-  @include mq(desk) {
- 
-  }
+    max-width: 656px;  
+;}
+
 }
 .subscribe__title {
   margin-bottom: 20px;
   @include mq(tab) {
     font-size: 42px;
     line-height: 1.2;
+    text-align: left
   }
 
 }
@@ -56,63 +51,7 @@
   @include mq(tab) {
     font-size: 16px;
     line-height: 1.5;
+    text-align: left
   }
 
-}
-
-.subscribe__form {
-  display: flex;
-  flex-direction: column;
-  @include mq(tab) {
-    flex-direction: row;
-    gap: 18px;
-    max-width: 518px;
-  }
-  @include mq(desk) {
-    gap: 32px;
-    max-width: 532px;
-  }
-  
-}
-
-.subscribe__input {
-  width: 100%;
-  margin-bottom: 20px;
-  background: #ffffff;
-  border: 0.854167px solid #ffe550;
-  border-radius: 30px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 11px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.5;
-  color: #505050;
-
-
-}
-
-.subscribe__btn {
-  max-width: 106px;
-  height: 100%;
-  padding: 10px 22px;
-  border-radius: 30px;
-  cursor: pointer;
-  background-color: #bbf330;
-  color: #2c2c2c;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
-  border-color: transparent;
-  &:hover, &:focus {
-    background-color: #B5FF00;
-  }
-
-  @include mq(mob-only) {
-    margin-left: auto;
-  }
 }
