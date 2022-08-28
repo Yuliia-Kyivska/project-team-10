@@ -1,0 +1,37 @@
+.offerings {
+    margin: 0 auto;
+    margin-top: 420px;
+    padding-top: 41px;
+    padding-bottom: 60px;
+    background-image: url(../images/offerings/fon-mob@1x_sm.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    @include mq(retina) {
+        background-image: url(../images/offerings/fon-mob@2x_sm.png);
+    }
+
+    @include mq(tab) {
+        max-width: 768px;
+        margin-top: 450px;
+        padding: 0 0 100px 0;
+        background-image: url(../images/offerings/fon-tab@1x_md.png);
+        background-repeat: no-repeat;
+
+        @include mq(retina) {
+            background-image: url(../images/offerings/fon-tab@2x_md.png);
+        }
+    }
+
+   @include mq(desk) {
+        max-width: 1280px;
+        margin-top: 500px;
+        padding: 171px 0 75px 0;
+        background-image: url(../images/offerings/fon-desk@1x_lg.png);
+        background-repeat: no-repeat;
+
+        @include mq(retina){
+            background-image: url(../images/offerings/fon-desk@2x_lg.png);
+        }
+    }
+}
