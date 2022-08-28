@@ -10,10 +10,11 @@
     max-width: 320px;
     position: absolute;
     bottom: 0px;
-    right: 0px;
+    right: 32px;
   }
     @include mq(desk) {
-      max-width: 580px;}
+      max-width: 580px;
+    margin-left: auto;}
 
 }
 
