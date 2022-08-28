@@ -1,110 +1,74 @@
-.container {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-
-    @include mq(mob) {
-        width: 480px;
-    }
-    
-    @include mq(tab) {
-        width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-    
-    @include mq(desk) {
-        width: 1280px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+.cards-set-f {
+  justify-content: center;
 }
-.section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.title-f {
+  text-align: center;
+  margin-bottom: 20px;
+
+  @include mq(tab) {
+    font-size: 42px;
+    line-height: 1.17;
+  }
 }
 
-.cards-set {
-    justify-content: center;
+.text-f {
+  text-align: center;
+  margin-bottom: 60px;
 
-    @include mq(desk) {
-        --card-item: 3;
-    }
-}
-
-
-.title {
-    text-align: center;
-    margin-bottom: 20px;
-
-    @include mq(tab) {
-        font-size: 42px;
-        line-height: 1.17;
-    }
-}
-
-.text {
-    text-align: center;
-    margin-bottom: 60px;
-
-    @include mq(tab) {
-        font-size: 16px;
-        line-height: 1.18;
-    }
+  @include mq(tab) {
+    font-size: 16px;
+    line-height: 1.18;
+  }
 }
 
 .food__item:nth-child(n + 4) {
-    
-    @include mq(mob-only) {
-        display:none;
-    }
+  @include mq(mob-only) {
+    display: none;
+  }
 }
 
 .circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 280px;
-    height: 282px;
-    
-    border: 11px solid #FFE550;
-    border-radius: 139.658px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 282px;
 
-    @include mq(tab) {
-        width: 336px;
-        height: 338px;
+  border: 11px solid #ffe550;
+  border-radius: 139.658px;
 
-        border: 14px solid #FFE550;
-        border-radius: 167.166px;
-    }
-    @include mq(desk) {
-        width: 394px;
-        height: 397px;
-    
-        border: 16px solid #FFE550;
-        border-radius: 197.5px;
-        }
+  @include mq(tab) {
+    width: 336px;
+    height: 338px;
+
+    border: 14px solid #ffe550;
+    border-radius: 167.166px;
+  }
+  @include mq(desk) {
+    width: 394px;
+    height: 397px;
+
+    border: 16px solid #ffe550;
+    border-radius: 197.5px;
+  }
 }
 
 .circle:hover,
 .circle:focus {
-    border-color: #BBF330;
+  border-color: #bbf330;
 }
 
 .dish {
-    width: 223.29px;
-    height: 223.49px;
+  width: 223.29px;
+  height: 223.49px;
 
-    @include mq(tab) {
+  @include mq(tab) {
     width: 267.95px;
     height: 268.19px;
-    }
-    
-    @include mq(desk) {
+  }
+
+  @include mq(desk) {
     width: 315px;
     height: 315px;
-    }
+  }
 }
-

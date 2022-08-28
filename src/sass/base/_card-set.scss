@@ -1,7 +1,7 @@
 .cards-set {
   //gap: var(--card-set-gap);
-  margin-left: calc(-1*var(--card-set-gap));
-  margin-top: calc(-1*var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
   display: flex;
   flex-wrap: wrap;
 
@@ -18,7 +18,6 @@
   flex-basis: calc(100% / var(--card-item) - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
-  
 }
 
 //.cards-set {
@@ -42,4 +41,3 @@
 //.cards-set-gap {
 //  flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item));
 //}
-
