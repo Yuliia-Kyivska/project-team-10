@@ -17,12 +17,12 @@
   width: 100%;
   @include mq(tab) {
     max-width: 537px;
-  
   }
   @include mq(desk) {
     margin-top: 146px;
   }
 }
+
 .hero__title {
   margin-bottom: 28px;
   width: 100%;
@@ -54,7 +54,3 @@
     width: 502px;
   }
 }
-
-
-
-

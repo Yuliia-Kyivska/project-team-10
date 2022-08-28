@@ -60,20 +60,6 @@
   }
 }
 
-.logo-f {
-  position: absolute;
-  top: 60px;
-  left: 20px;
-  z-index: 0;
-
-  @include mq(tab) {
-    top: 100px;
-    left: 33px;
-  }
-  @include mq(desk) {
-    left: 16px;
-  }
-}
 .footer__list {
   display: flex;
   flex-direction: column;

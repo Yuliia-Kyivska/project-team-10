@@ -1,71 +1,71 @@
 .order-button {
-    width: 100px;
-    height: 32px;
+  width: 100px;
+  height: 32px;
 
-    background: #BBF330;
-    border-radius: 30px; 
-    border: 0;
+  background: #bbf330;
+  border-radius: 30px;
+  border: 0;
 
-    // Text styles //
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1,5;
-    color: #2C2C2C;
+  // Text styles //
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 5;
+  color: #2c2c2c;
 
+  // margin-top: 26px;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    // margin-top: 26px;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover, &:focus {
-        background-color: #B5FF00;
-      }
-
+  &:hover,
+  &:focus {
+    background-color: #b5ff00;
+  }
 }
 
 .offerings .order-button {
-    background-color: #FFFFFF;
-    border: 2px solid #7EB101;
-    
-     &:hover, &:focus {
-       background-color:  #FFE550;}
-    }
+  background-color: #ffffff;
+  border: 2px solid #7eb101;
 
-    .signup-form__button {
-      display: block;
-      margin-left: auto;
-      height: 42px;
-      width: 103px;
-      cursor: pointer;
-      
-      margin-bottom: 20px;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-      @include mq(tab) {
-          margin-left: 13px;
-          margin-bottom: 0;
-      }
-  
-      font-family: 'Roboto';
-      color: #2C2C2C;
-      font-weight: 500;
-      font-size: 13px;
-      line-height: 1.5;
-  
-      background-color: #FFFFFF;
-      border: 0.854167px solid #7EB101;
-      border-radius: 30px;
+  &:hover,
+  &:focus {
+    background-color: #ffe550;
   }
-  .signup-form__button:hover,
-  .signup-form__button:focus {
-      background-color: #FFE550;
+}
+
+.signup-form__button {
+  display: block;
+  margin-left: auto;
+  height: 42px;
+  width: 103px;
+  cursor: pointer;
+
+  margin-bottom: 20px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include mq(tab) {
+    margin-left: 13px;
+    margin-bottom: 0;
   }
-  
-  
-  .subscribe .signup-form__button {
+
+  font-family: 'Roboto';
+  color: #2c2c2c;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+
+  background-color: #ffffff;
+  border: 0.854167px solid #7eb101;
+  border-radius: 30px;
+}
+.signup-form__button:hover,
+.signup-form__button:focus {
+  background-color: #ffe550;
+}
+
+.subscribe .signup-form__button {
       background-color: #bbf330;
       border-color: transparent;
       &:hover, &:focus{
@@ -78,3 +78,6 @@
     }
    
   }
+
+
+
