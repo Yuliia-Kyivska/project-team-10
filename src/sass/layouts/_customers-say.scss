@@ -1,71 +1,17 @@
-
-
-.customer__pad {
-    
+.customer-pad {
     background-color: #FFFFFF;
-      margin-left: auto;
-      margin-right: auto;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      padding-top: 118px;
-      padding-bottom: 118px;
-      text-align: center;
-    
-      @media screen and (min-width: 320px) {
-        background-image: url(../images/customer-say/customers@1x_lg_mob.png);
-    }
-    
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+  
+    @media screen and (min-width: 320px) {
+      background-image: url(../images/customer-say/customers@1x_lg_mob.png);
+  }
+  
 
-    }
-
-
-
-.customer__best {
-    
-font-weight: 700;
-font-size: 16px;
-line-height: 1.18;
-
-}
-.customer__sumith {
-    font-weight: 500;
-font-size: 14px;
-line-height: 1.5;
-
-}
-.customer__title {
-    font-weight: 700;
-font-size: 28px;
-line-height: 1.17;
-margin-bottom: 28px;
-padding-left: 20px;
-padding-right: 20px;
-text-align: left;
-}
-
-.customer__review {
-    background-color: #FFFFFF;
-    
-height: 247px;
-margin-left: 20px;
-margin-right: 20px;
-margin-bottom: 24px;
-padding-top: 32px;
-border-radius: 0px 30px 30px 30px;
-
-}
-.text {
-    margin-bottom: 28px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: left;
-}
-.customer__review-icon{
-    display: flex;
-   
-    top: 8px;
-    left: 8px;
-   display: inline-block;
-   
-}
+  }
