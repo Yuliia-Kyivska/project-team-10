@@ -1,7 +1,6 @@
 .offerings {
   margin: 0 auto;
   padding-top: 41px;
-  padding-bottom: 60px;
   background-image: url(../images/offerings/fon-mob@1x_sm.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -63,18 +62,6 @@
 
 }
 
-.offerings__apple{
-  width: 100%;
-
-  @include mq(tab){
-    width:357px;
-  }
-
-  @include mq(desk){
-  width:550px;
-  }
-}
-
 .offerings__img-container--bottom {
   margin-bottom: 60px;
 
@@ -83,54 +70,11 @@
   }
 }
 
-.offerings__img {
-  margin: 0 auto;
-
-  &--middle {
-    margin-left: 29px;
-    margin-right: 44px;
-    margin-bottom: 67px;
-  }
-
-  &--small {
-    margin-bottom: 68px;
-  }
-
-  &--middle,
-  &--small {
-    @include mq(desk) {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      border: 0;
-      padding: 0;
-      white-space: nowrap;
-      clip-path: inset(100%);
-      clip: rect(0 0 0 0);
-      overflow: hidden;
-    }
-
-    @include mq(mob-only) {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      border: 0;
-      padding: 0;
-      white-space: nowrap;
-      clip-path: inset(100%);
-      clip: rect(0 0 0 0);
-      overflow: hidden;
-    }
-  }
-}
-
 .offerings__main {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  margin-bottom:-150px ;
+
 
   @include mq(tab) {
     gap: 0;
@@ -224,8 +168,6 @@
 .info__conteiner {
   display: flex;
   align-items: center;
-  padding-bottom: 60px;
-
 }
 
 .info__title {
