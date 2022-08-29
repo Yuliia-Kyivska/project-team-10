@@ -71,10 +71,7 @@
 }
 
 .offerings__main {
-  display: flex;
-  flex-direction: column;
   gap: 28px;
-
 
   @include mq(tab) {
     gap: 0;
@@ -92,8 +89,9 @@
  
   font-size: 28px;
   line-height: 1.2;
+  margin-bottom: 20px;
 
-  @include mq(tab) {
+  @include mq(mob) {
     margin-bottom: 20px;
     font-size: 42px;
   }
