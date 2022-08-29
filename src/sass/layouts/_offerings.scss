@@ -33,43 +33,6 @@
   }
 }
 
-.offerings__main-container {
-
-  @include mq(tab-only) {
-    padding-top: 115px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  @include mq(desk) {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-.offerings__img-container {
-   
-  @include mq(tab) {
-    display: flex;
-    align-items: baseline;
-  }
-
-  @include mq(desk) {
-    display: flex;
-    align-items: baseline;
-  }
-
-}
-
-.offerings__img-container--bottom {
-  margin-bottom: 60px;
-
-  @include mq (desk) {
-    margin-bottom: 0;
-  }
-}
-
 .offerings__main {
   gap: 28px;
 
