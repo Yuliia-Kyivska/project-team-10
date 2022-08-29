@@ -33,7 +33,13 @@
   }
 }
 
-
+.offerings__container{
+ 
+  @include mq(desk){
+  display: flex;
+  flex-direction: row;
+  }
+}
 
 .offerings__main {
   gap: 28px;
