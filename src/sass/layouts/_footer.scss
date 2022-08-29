@@ -1,8 +1,8 @@
 .footer {
-  position: relative;
   padding: 60px 0;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 
   background-image: url(../images/footer/fruit-apple@1x_mob.png),
     url(../images/footer/fruit-apple@1x_mob.webp),
@@ -84,28 +84,39 @@
   }
 }
 
+.footer__nav {
+  display: flex;
+  gap: 81px;
+  @include mq(tab) {
+    gap: 114px;
+    }
+  
+  @include mq(desk) {
+    gap: 148px;
+  }
+}
+
 .footer__menu {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 4px;
-  padding-left: 150px;
 
   @include mq(tab) {
     flex-direction: row;
-  }
-  @include mq(tab) {
     padding-top: 18px;
   }
 }
+
 .footer__menu-item:not(:last-child) {
   margin-bottom: 20px;
+  
   @include mq(tab) {
     margin-right: 28px;
   }
 }
 .footer__menu-item:last-child {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 .footer .title {
@@ -116,7 +127,7 @@
 
   margin-bottom: 12px;
 }
-
+/*
 .footer__agreement,
 .footer__privacy-item,
 .footer__licence {
@@ -144,6 +155,40 @@
     gap: 20px;
   }
 }
+.footer__licence {
+  text-align: center;
+}
+*/
+
+.footer__privacy,
+.footer__agreement,
+.footer__licence {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #2c2c2c;
+  
+    @include mq(tab) {
+    font-size: 12px;
+    line-height: 1.16;
+}
+}
+.footer__agreement-link,
+.footer__privacy-link {
+  color: #7eb101;
+}
+
+.footer__privacy {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: auto;
+
+  @include mq(tab) {
+    gap: 20px;
+  }
+}
+
 .footer__licence {
   text-align: center;
 }
