@@ -1,0 +1,88 @@
+.signup-form {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+
+    @include mq(tab) {
+        
+        margin-bottom: 12px
+    }
+    @include mq(desk) {
+        
+        justify-content: flex-end;
+    }
+}
+
+
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    @include mq(tab) {
+        flex-direction: row;
+        gap: 18px;
+        max-width: 518px;
+      }
+      @include mq(desk) {
+        gap: 32px;
+        max-width: 532px;
+      }
+}
+
+.signup-form__input {
+    height: 42px;
+    width: 100%;
+    padding: 12px 61.5px 12px 12px;
+    border: 0.854167px solid #FFE550;
+    border-radius: 30px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include mq(tab){
+        width:279px;
+    }
+}
+
+.subscribe .signup-form__input {
+    @include mq(tab) {
+        width: 395px;
+      }
+}
+
+.signup-form__input:not(:placeholder-shown):required:valid {
+border-color: #7EB101;
+}
+.signup-form__input:not(:placeholder-shown):required:invalid {
+    border-color: #FF705D;
+    margin-bottom: 4px;
+}
+.signup-form__input:not(:placeholder-shown):required:invalid + .signup-form__input-invalid {
+    display: inline-flex;
+    align-items: center;
+    @include mq(tab) {
+        display: inline;
+    }
+}
+.signup-form__input::placeholder {
+    font-size: 12px;
+    color: #505050;
+    line-height: 1.5;
+}
+.signup-form__input-invalid {
+    display:none;
+
+    color: #FF705D;
+    font-size: 10px;
+    line-height: 1.5;
+}
+.signup-form__input-icon {
+margin-right: 4px;
+width: 12px;
+height:12px;
+}
+
+.signup-tab {
+    @include mq(tab) {
+        display: flex;
+    }
+}

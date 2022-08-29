@@ -1,45 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Page title</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-
-
   </head>
   <body>
     <!-- Олександр Гандера -->
     <include src="./partials/header.html"></include>
-    <!-- Каракуц Катерина -->
-    <include src="./partials/hero.html"></include>
-    <!-- Денис Бухтярьов -->
-    <include src="./partials/offerings.html"></include>
-    <!-- Вікторія -->
-    <include src="./partials/favorites.html"></include>
-    <!-- Олександр Чалий -->
-    <include src="./partials/customer-say.html"></include>
-    <!-- Каракуц Катерина -->
-    <include src="./partials/subscribe.html"></include>
+    <main>
+      <!-- Каракуц Катерина -->
+      <include src="./partials/hero.html"></include>
+      <!-- Денис Бухтярьов -->
+      <include src="./partials/offerings.html"></include>
+      <!-- Вікторія -->
+      <include src="./partials/favorites.html"></include>
+      <!-- Олександр Чалий -->
+      <include src="./partials/customer-say.html"></include>
+      <!-- Каракуц Катерина -->
+      <include src="./partials/subscribe.html"></include>
+    </main>
     <!-- Вікторія -->
     <include src="./partials/footer.html"></include>
 
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <!--<include src="./partials/example.html"></include>-->
 
-    <script src="./js/menu.js"></script>
     <script type="module" src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>

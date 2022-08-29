@@ -1,5 +1,7 @@
 .cards-set {
-  gap: var(--card-set-gap);
+  //gap: var(--card-set-gap);
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
   display: flex;
   flex-wrap: wrap;
 
@@ -12,6 +14,30 @@
   }
 }
 
-.cards-set-gap {
-  flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item));
+.card-item {
+  flex-basis: calc(100% / var(--card-item) - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
+
+//.cards-set {
+//gap: var(--card-set-gap);
+//display: flex;
+// flex-wrap: wrap;
+
+// @include mq(tab) {
+//--card-item: 2;
+// }
+
+// @include mq(desk) {
+//--card-item: 3;
+// }
+//}
+
+//.cards-set__item {
+//flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item));
+//}
+
+//.cards-set-gap {
+//  flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-set-gap)) / var(--card-item));
+//}
