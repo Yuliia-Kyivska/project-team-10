@@ -130,14 +130,15 @@
 
 
 /** Read more icon **/
+
 .info__conteiner {
   display: flex;
   align-items: center;
+  margin-top: 28px;
 }
 
 .info__title {
-  font-style: normal;
-  font-weight: 400;
+ 
   font-size: 13.6667px;
   line-height: 150%;
 
