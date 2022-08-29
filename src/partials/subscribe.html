@@ -26,15 +26,23 @@
         varius enim in eros elementum tristique.
       </p>
       <div class="form__container">
-        <form action="submit" class="signup-form">
-          <input class="signup-form__input" type="email" name="email" placeholder="Enter your email" required minlength="6" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"> 
-          <p class="signup-form__input-invalid">
-            <svg class="signup-form__input-icon">
-                <use href="./images/icons.svg#errorsvg"></use>
-            </svg>Not a valid email address (example@email.com)
-          </p>
+        <form class="signup-form" name="signup_form" autocomplete="off">
+          <div class="invalid-tab">
+            <input
+              class="signup-form__input"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+              minlength="6"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+            <p class="signup-form__input-invalid">
+              <svg class="signup-form__input-icon">
+                <use href="./images/icons.svg#errorsvg"></use></svg>Not a valid email address (example@email.com)</p>
+          </div>
+          <button class="signup-form__button">Subscribe</button>
         </form>
-        <button type="submit" class="signup-form__button">Subscribe</button>
+        
       </div>
     </div>
   </div>
