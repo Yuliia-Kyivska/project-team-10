@@ -1,6 +1,5 @@
 .header__container {
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
@@ -130,10 +129,6 @@
     .mob__menu {
         display: none;
     }
-}
-
-.mob__menu {
-    // z-index: 99;
 }
 
 .mob__burger {
