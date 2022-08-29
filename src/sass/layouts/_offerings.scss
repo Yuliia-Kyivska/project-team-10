@@ -12,6 +12,7 @@
   @include mq(tab) {
     max-width: 768px;
     padding: 0 0 100px 0;
+    margin-top: -100px;
     background-image: url(../images/offerings/fon-tab@1x_md.png);
     background-repeat: no-repeat;
 
@@ -33,8 +34,33 @@
   }
 }
 
+.offerings__container{
+ 
+  @include mq(desk){
+  display: flex;
+  flex-direction: row;
+  }
+}
+
+.offerings__images{
+  @include mq(tab){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+  }
+
+  
+}
+
 .offerings__main {
   gap: 28px;
+
+  @include mq(mob-only){
+  margin-top: 60px;
+  margin-bottom: 60px;
+  }
+
 
   @include mq(tab) {
     gap: 0;
@@ -58,18 +84,32 @@
     margin-bottom: 20px;
     font-size: 42px;
   }
+
+  @include mq(tab){
+    margin-top: 60px;
+  }
+
+  @include mq(desk){
+    margin-top: 200px;
+  }
+
 }
 
 .offerings__text {
-  width: 100%;
-  font-weight: 400;
   font-size: 14px;
   line-height: calc(16 / 14);
+  margin-bottom: 28px;
 
   @include mq(tab) {
-    width: 500px;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: calc(19 / 16);
+    margin-bottom: 40px;
+  }
+
+  @include mq(desk){
+   font-size: 16px;
+   line-height: 1.5;
+   margin-bottom: 40px;
   }
 }
 
@@ -103,10 +143,8 @@
 
 .offerings__icon-title {
   margin-bottom: 16px;
-  font-style: normal;
-  font-weight: 700;
   font-size: 18px;
-  line-height: calc(21px / 18px);
+  line-height: calc(21 / 18);
 }
 
 .offerings__icon-text {
@@ -126,16 +164,17 @@
 
 
 /** Read more icon **/
+
 .info__conteiner {
   display: flex;
   align-items: center;
+  margin-top: 28px;
 }
 
 .info__title {
-  font-style: normal;
-  font-weight: 400;
+ 
   font-size: 13.6667px;
-  line-height: 150%;
+  line-height: 1.5;
 
   @include mq(desk) {
     display: none;

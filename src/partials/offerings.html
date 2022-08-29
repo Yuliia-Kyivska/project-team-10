@@ -1,76 +1,109 @@
-<section class="offerings section" id="offerings">
-  <div class="container">
-    <div class="offerings__main-container">
-        <picture>
-          <source media="(min-width:1280px )" type="image/webp" srcset="
-                      ./images/offerings/apple-desk@1x_lg.webp 1x,
-                      ./images/offerings/apple-desk@2x_lg.webp 2x
-                    " />
-          <source media="(min-width:768px )" type="image/webp" srcset="
-                      ./images/offerings/apple-tab@1x_md.webp 1x,
-                      ./images/offerings/apple-tab@2x_md.webp 2x
-                    " />
-          <source media="(min-width:480px )" type="image/webp" srcset="
-                      ./images/offerings/apple-mob@1x_sm.webp 1x,
-                      ./images/offerings/apple-mob@2x_sm.webp 2x
-                    " />
-
-          <source media="(min-width:1280px )" type="image/png" srcset="
-                      ./images/offerings/apple-desk@1x_lg.png 1x,
-                      ./images/offerings/apple-desk@2x_lg.png 2x
-                    " />
-          <source media="(min-width:768px )" type="image/png" srcset="
-                      ./images/offerings/apple-tab@1x_md.png 1x,
-                      ./images/offerings/apple-tab@2x_md.png 2x
-                    " />
-          <source media="(min-width:480px )" type="image/png" srcset="
-                      ./images/offerings/apple-mob@1x_sm.png 1x,
-                      ./images/offerings/apple-mob@2x_sm.png 2x
-                    " />
-
-          <img src="./images/offerings/apple-mob@1x_sm.png" alt="apple"  width="550" />
-        </picture>
-      <!-- main -->
-      <div class="offerings__main">
-        <h2 class="offerings__title">What’s Special About Our Offerings</h2>
-        <p class="offerings__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-        </p>
-
-        <ul class="offerings__list list">
-          <li>
-            <div>
-              <svg class="offerings__icons" width="48" height="48">
-                <use href="./images/icons.svg#rocket"></use>
-              </svg>
-            </div>
-            <h3 class="offerings__icon-title">Fasest Delivery</h3>
-            <p class="offerings__icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros.</p>
-
-          </li>
-          <li>
-            <div>
-              <svg class="offerings__icons" width="48" height="48">
-                <use href="./images/icons.svg#hend"></use>
-              </svg>
-            </div>
-            <h3 class="offerings__icon-title">Fasest Delivery</h3>
-            <p class="offerings__icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros.</p>
-          </li>
-        </ul>
-        <div class="info__conteiner">
-          <button class="order-button">Order Now</button>
-          <div class="info__icon">
-            <h3 class="info__title">Read More</h3>
-            <svg class="info__icon--icon icon" width="14" height="14">
-              <use href="./images/icons.svg#right-arrow"></use>
+<section class="offerings section">
+  <div class="container offerings__container">
+    <div class="offerings__images">
+      <picture>
+        <!-- Desktop -->
+        <source
+          media="(min-width:1280px)"
+          srcset="
+            ./images/offerings/apple-desk@1x_lg.webp 1x,
+            ./images/offerings/apple-desk@2x_lg.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width:1280px)"
+          srcset="
+            ./images/offerings/apple-desk@1x_lg.png 1x,
+            ./images/offerings/apple-desk@2x_lg.png 2x
+          "
+          type="image/jpeg"
+        />
+        <!-- Tablet -->
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./images/offerings/apple-tab@1x_md.webp 1x,
+            ./images/offerings/apple-tab@2x_md.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./images/offerings/apple-tab@1x_md.png 1x,
+            ./images/offerings/apple-tab@2x_md.png 2x
+          "
+          type="image/jpeg"
+        />
+        <!-- Mobile -->
+        <source
+          media="(max-width:767px)"
+          srcset="
+            ./images/offerings/apple-mob@1x_sm.webp 1x,
+            ./images/offerings/apple-mob@2x_sm.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width:767px)"
+          srcset="
+            ./images/offerings/apple-mob@1x_sm.png 1x,
+            ./images/offerings/apple-mob@2x_sm.png 2x
+          "
+          type="image/jpeg"
+        />
+        <img
+          src="./images/offerings/apple-mob@1x_sm.png"
+          alt="apple"
+          width="550"
+          height="550"
+        />
+      </picture>
+    </div>
+    <!-- main -->
+    <div class="offerings__main">
+      <h2 class="offerings__title">What’s Special About Our Offerings</h2>
+      <p class="offerings__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <ul class="offerings__list list">
+        <li>
+          <div>
+            <svg class="offerings__icons" width="48" height="48">
+              <use href="./images/icons.svg#rocket"></use>
             </svg>
           </div>
+          <h3 class="offerings__icon-title">Fasest Delivery</h3>
+          <p class="offerings__icon-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+        <li>
+          <div>
+            <svg class="offerings__icons" width="48" height="48">
+              <use href="./images/icons.svg#hend"></use>
+            </svg>
+          </div>
+          <h3 class="offerings__icon-title">Fasest Delivery</h3>
+          <p class="offerings__icon-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+      </ul>
+      <div class="info__conteiner">
+        <button class="order-button">Order Now</button>
+        <div class="info__icon">
+          <h3 class="info__title">Read More</h3>
+          <svg class="info__icon--icon icon" width="14" height="14">
+            <use href="./images/icons.svg#right-arrow"></use>
+          </svg>
         </div>
       </div>
     </div>
+  </div>
 </section>
