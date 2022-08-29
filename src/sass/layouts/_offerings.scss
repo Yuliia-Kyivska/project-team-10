@@ -38,6 +38,7 @@
 .offerings__main {
   gap: 28px;
 
+
   @include mq(tab) {
     gap: 0;
   }
