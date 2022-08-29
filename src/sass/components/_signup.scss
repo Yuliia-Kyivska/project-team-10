@@ -50,7 +50,7 @@
 }
 
 .signup-form__input:not(:placeholder-shown):required:valid {
-border-color: #7EB101;
+    border-color: #7EB101;
 }
 .signup-form__input:not(:placeholder-shown):required:invalid {
     border-color: #FF705D;

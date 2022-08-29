@@ -107,7 +107,9 @@
     padding-top: 18px;
   }
 }
-
+.footer__menu-item .link {
+  color: #000000;
+}
 .footer__menu-item:not(:last-child) {
   margin-bottom: 20px;
   
@@ -127,38 +129,6 @@
 
   margin-bottom: 12px;
 }
-/*
-.footer__agreement,
-.footer__privacy-item,
-.footer__licence {
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1.2;
-  color: #2c2c2c;
-  @include mq(tab) {
-    font-size: 12px;
-    line-height: 1.16;
-  }
-}
-
-.footer__agreement-link,
-.footer__privacy-link {
-  color: #7eb101;
-}
-
-.footer__privacy {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: auto;
-  @include mq(tab) {
-    gap: 20px;
-  }
-}
-.footer__licence {
-  text-align: center;
-}
-*/
 
 .footer__privacy,
 .footer__agreement,
