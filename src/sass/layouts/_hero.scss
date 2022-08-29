@@ -1,12 +1,13 @@
 .hero {
-  position: relative;
+
 }
 .hero__container {
   padding-top: 60px;
   padding-bottom: 50px;
 
   @include mq(tab) {
-    padding-bottom: 74px;
+    padding-bottom: 74px;  
+    position: relative;
   
   }
   @include mq(desk) {
