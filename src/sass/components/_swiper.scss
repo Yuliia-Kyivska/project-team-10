@@ -1,5 +1,5 @@
 .swiper-container {
-  position: relative;
+ position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,13 +7,16 @@
     display: none;
     }
   @include mq(tab-only) {
-    max-width: 336px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+    max-width: 320px;
+  position: absolute;
+    top: 89px;
+    right: 32px;
   }
     @include mq(desk) {
-      max-width: 608px;}
+      max-width: 580px;
+    margin-left: auto;
+    top: 14px;
+  }
 
 }
 

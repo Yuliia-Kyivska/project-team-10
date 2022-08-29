@@ -1,34 +1,41 @@
-.hero__container {
+.hero {
   padding-top: 60px;
   padding-bottom: 50px;
 
   @include mq(tab) {
-    padding-bottom: 74px;
+    padding-bottom: 74px; }
+  @include mq(desk) {
+      padding-top: 14px;
+}
+}
+.hero__container {
+    align-items: center;
+  @include mq(tab) {
     position: relative;
+  
   }
   @include mq(desk) {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 14px;
-  }
+
 }
+  }
+
 .hero__content {
   width: 100%;
   @include mq(tab) {
     max-width: 537px;
   }
   @include mq(desk) {
-    margin-top: 146px;
   }
 }
 
 .hero__title {
   margin-bottom: 28px;
-  width: 100%;
 
+font-size: 28px;
+line-height: 1.17;
+color: #2C2C2C;
   @include mq(tab) {
-    text-align: left;
     margin-bottom: 44px;
     font-size: 42px;
     line-height: 1.2;
@@ -43,9 +50,10 @@
 .hero__text {
   margin-bottom: 28px;
   width: 100%;
-
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2C2C2C;
   @include mq(tab) {
-    text-align: left;
     margin-bottom: 40px;
     font-size: 16px;
     width: 336px;

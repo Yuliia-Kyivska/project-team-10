@@ -1,16 +1,21 @@
+.subscribe {
+  padding-bottom: 60px;
+  @include mq(tab) {
+
+    padding-bottom: 100px;
+  }
+
+}
+
 .subscribe__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  padding-bottom: 60px;
-  @include mq(tab) {
 
-    padding-bottom: 100px;
-  }
+ 
   @include mq(desk) {
-    padding-left: 16px;
     flex-direction: row-reverse;
   }
 }
