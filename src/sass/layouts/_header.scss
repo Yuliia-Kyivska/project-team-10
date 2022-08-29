@@ -114,6 +114,28 @@
     color: #2C2C2C;
 }
 
+@media (max-width:767px) {
+    .nav__button {
+        display: none;
+    }
+}
+
+@media (max-width:767px){
+    .nav__burger {
+        display: inline-flex;
+    }
+}
+
+@media (min-width:768px) {
+    .mob__menu {
+        display: none;
+    }
+}
+
+.mob__menu {
+    // z-index: 99;
+}
+
 .mob__burger {
   margin-left: auto;
   padding: 0;
