@@ -88,6 +88,11 @@
   @include mq(tab){
     margin-top: 60px;
   }
+
+  @include mq(desk){
+    margin-top: 200px;
+  }
+
 }
 
 .offerings__text {
