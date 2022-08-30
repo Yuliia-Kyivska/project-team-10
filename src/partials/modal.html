@@ -1,51 +1,78 @@
 <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-        <button type="button" class="modal__button-close" data-modal-close>
-            <svg class="modal-cross">
-                <use href="./images/icons.svg#icon-close_menu"></use>
-            </svg>
-        </button>
-        <form action="" class="modal__form">
-            <strong class="modal__title">Order Form</strong>
-            <div class="modal__form-group">
-                <label for="" class="modal__form-wrap">
-                    <span class="modal__label">Name</span>
-                    <input type="text" class="modal__input" placeholder="Your name" minlength="3"  required>
-                    <div class="invalid__container">
-                        <span class="required-text"><svg class="warning-icon">
-                            <use href="./images/icons.svg#errorsvg"></use>
-                        </svg>This field is required</span>
-                        <span class="warning-text"><svg class="warning-icon">
-                            <use href="./images/icons.svg#errorsvg"></use>
-                        </svg>The name must be between 3 and 25 characters</span>
-                    </div>
-                </label>
-                <label for="" class="modal__form-wrap">
-                    <span class="modal__label">Phone number</span>
-                    <input type="tel" class="modal__input" placeholder="+38(0_ _) _ _ _   _ _   _ _" pattern="[0-9]{10,12}" required>
-                    <div class="invalid__container">
-                        <span class="required-text"><svg class="warning-icon">
-                            <use href="./images/icons.svg#errorsvg"></use>
-                        </svg>This field is required</span>
-                        <span class="warning-text"><svg class="warning-icon">
-                            <use href="./images/icons.svg#errorsvg"></use>
-                        </svg> This phone must be in the format  099 000 00 00</span>
-                    </div>
-                </label>
-                <label for="" class="modal__form-wrap">
-                    <span class="modal__label">E-mail</span>
-                    <input type="email" class="modal__input" placeholder="example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                    <div class="invalid__container">
-                        <span class="required-text"><svg class="warning-icon">
-                            <use href="./images/icons.svg#errorsvg"></use>
-                        </svg>This field is required</span>
-                        <span class="warning-text"><svg class="warning-icon">
-                            <use href="./images/icons.svg#errorsvg"></use>
-                        </svg>Please enter a valid email address</span>
-                    </div>
-                </label>
-            </div>
-            <button type="submit" class="modal__form-button">Send</button>
-        </form>
-    </div>    
+  <div class="modal">
+    <button type="button" class="modal__button-close" data-modal-close>
+      <svg class="modal-cross">
+        <use href="./images/icons.svg#icon-close_menu"></use>
+      </svg>
+    </button>
+    <form class="modal__form">
+      <strong class="modal__title">Order Form</strong>
+      <div class="modal__form-group">
+        <label class="modal__form-wrap">
+                <span class="modal__label">Name</span>
+                <input
+                type="text"
+                class="modal__input"
+                placeholder="Your name"
+                minlength="3"
+                required
+                />
+                <span class="invalid__container">
+                <span class="required-text"
+                ><svg class="warning-icon">
+                    <use href="./images/icons.svg#errorsvg"></use></svg                >This field is required</span
+                >
+                <span class="warning-text"
+                ><svg class="warning-icon">
+                    <use href="./images/icons.svg#errorsvg"></use></svg                >The name must be between 3 and 25 characters</span
+                >
+                </span>
+        </label>
+        <label class="modal__form-wrap">
+            <span class="modal__label">Phone number</span>
+            <input
+              type="tel"
+              class="modal__input"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              pattern="[0-9]{10,12}"
+              required
+            />
+            <span class="invalid__container">
+                <span class="required-text"
+                  ><svg class="warning-icon">
+                    <use href="./images/icons.svg#errorsvg"></use></svg>This field is required</span
+                >
+                <span class="warning-text"
+                  ><svg class="warning-icon">
+                    <use href="./images/icons.svg#errorsvg"></use>
+                  </svg>
+                  This phone must be in the format 099 000 00 00</span
+                >
+              </span>
+        </label>
+        <label class="modal__form-wrap">
+            <span class="modal__label">E-mail</span>
+            <input
+              type="email"
+              class="modal__input"
+              placeholder="example@gmail.com"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              required
+            />
+            <span class="invalid__container">
+                <span class="required-text"
+                  ><svg class="warning-icon">
+                    <use href="./images/icons.svg#errorsvg"></use></svg              >This field is required</span
+                >
+                <span class="warning-text"
+                  ><svg class="warning-icon">
+                    <use href="./images/icons.svg#errorsvg"></use></svg              >Please enter a valid email address</span
+                >
+            </span>
+        </label>
+
+      </div>
+      <button type="submit" class="modal__form-button">Send</button>
+    </form>
+  </div>
 </div>

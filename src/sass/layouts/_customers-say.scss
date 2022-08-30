@@ -6,27 +6,36 @@
   background-repeat: no-repeat;
   min-width: 320px;
   height: 769px;
-  background-image: url('../images/customer-say/customers@1x_mob.png');
+  background-image: url('../images/customer-say/customers@1x_mob.png'), url('../images/customer-say/customers@1x_mob.webp');
+  @include mq(retina) {
+    background-image: url('../images/customer-say/customers@2x_mob.png'), url('../images/customer-say/customers@2x_mob.webp');
+  }
 
   @media screen and (min-width: 480px) {
-    width: 480px;
     height: 769px;
-    background-image: url('../images/customer-say/customers@1x_480_mob.png');
+    background-image: url('../images/customer-say/customers@1x_480_mob.png'), url('../images/customer-say/customers@1x_480_mob.webp');
     padding-bottom: 120px;
-  }
+    @include mq(retina) {
+        background-image: url('../images/customer-say/customers@2x_480_mob.png'), url('../images/customer-say/customers@2x_480_mob.webp');
+      }
+    }
 
   @include mq(tab) {
-    width: 768px;
     height: 554px;
-    background-image: url('../images/customer-say/customers@1x_tab.png');
-  }
+    background-image: url('../images/customer-say/customers@1x_tab.png'), url('../images/customer-say/customers@1x_tab.webp');
+    @include mq(retina) {
+        background-image: url('../images/customer-say/customers@2x_tab.png'), url('../images/customer-say/customers@2x_tab.webp');
+      }
+    }
   @include mq(desk) {
-    width: 1280px;
     height: 647px;
-    background-image: url('../images/customer-say/customers@1x_desk.png');
+    background-image: url('../images/customer-say/customers@1x_desk.png'), url('../images/customer-say/customers@1x_desk.webp');
     padding-bottom: 200px;
+    @include mq(retina) {
+        background-image:url('../images/customer-say/customers@2x_desk.png'), url('../images/customer-say/customers@2x_desk.webp');
+      }
+    }
   }
-}
 
 .customer__say {
   @include mq(tab) {
@@ -47,6 +56,9 @@
 .customer__text {
   margin-bottom: 32px;
   text-align: initial;
+  @include mq(tab) {
+      font-size: 16px;
+    }
 }
 
 .customer__title,
@@ -71,6 +83,7 @@
     padding: 12px;
   }
   @include mq(desk) {
+    margin: 0;
     gap: 139px;
     width: 501px;
     padding: 14px;
