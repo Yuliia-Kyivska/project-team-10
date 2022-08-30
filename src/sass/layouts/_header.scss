@@ -17,13 +17,14 @@
   gap: 28px;
   align-items: center;
   margin-left: auto;
+  display: flex;
+  gap: 28px;
+  align-items: center;
 }
 
 .nav__list {
   display: flex;
-  gap: 28px;
   align-items: center;
- 
 }
 
 @media (max-width: 767px) {
@@ -52,7 +53,6 @@
 }
 
 .nav__link {
-  // margin-top: 28px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -69,7 +69,6 @@
 
 
 .nav__link {
-  // margin-top: 28px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
