@@ -23,7 +23,7 @@
 
   @include mq(desk) {
     max-width: 1280px;
-    margin-top: -180px;
+    margin-top: -220px;
     padding: 171px 0 75px 0;
     background-image: url(../images/offerings/fon-desk@1x_lg.png);
     background-repeat: no-repeat;
@@ -39,6 +39,7 @@
   @include mq(desk){
   display: flex;
   flex-direction: row;
+  align-items: center;
   }
 }
 
@@ -47,7 +48,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 150px;
   }
 
   
@@ -87,10 +87,6 @@
 
   @include mq(tab){
     margin-top: 60px;
-  }
-
-  @include mq(desk){
-    margin-top: 260px;
   }
 
 }
