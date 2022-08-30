@@ -26,9 +26,6 @@
 }
 .subscribe__img {
   max-width: 161px;
-  align-self: center;
-  margin-bottom: 17px;
-
   position: absolute;
   top: -43px;
 
@@ -45,8 +42,6 @@
 }
 
 .subscribe__content {
-  display: flex;
-  flex-direction: column;
   @include mq(tab) {
     max-width: 656px;
     margin-right: auto;
