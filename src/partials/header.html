@@ -64,11 +64,18 @@
           <a href="#feedback" class="nav__link link">Feedback</a>
         </li>
       </ul>
+
+      <!-- кнопка -->
+      <button
+        type="button"
+        class="order-button"
+        aria-expanded="false"
+        data-menu-button
+        data-modal-open
+      >
+        Order now
+      </button>
     </nav>
-    <!-- кнопка -->
-    <button type="button" class="order-button" aria-expanded="false" data-menu-button data-modal-open>
-      Order now
-    </button>
     <!-- Моб меню -->
     <button class="mob__burger" type="button" data-menu-open>
       <svg width="23" height="16" class="header__menu">
@@ -81,7 +88,7 @@
         class="mob__cross"
         type="button"
         aria-expanded="false"
-        data-menu-close>
+        aria-controls="menu-container"  data-menu-close>
         <svg width="24" height="24" class="header__cross" >
           <use href="./images/icons.svg#icon-close_menu"></use>
         </svg>
