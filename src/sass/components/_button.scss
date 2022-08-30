@@ -63,19 +63,15 @@
 }
 
 .subscribe .signup-form__button {
-      background-color: #bbf330;
-      border-color: transparent;
-      &:hover, &:focus{
-          background-color: #B5FF00;
-      }
+  background-color: #bbf330;
+  border-color: transparent;
+  &:hover,
+  &:focus {
+    background-color: #b5ff00;
   }
-  .header .order-button {
-    margin-left: 30px;
-    @include mq (mob-only) {
-        display: none; 
-    }
-   
+}
+.header .order-button {
+  @include mq(mob-only) {
+    display: none;
   }
-
-
-
+}
