@@ -38,6 +38,7 @@
   @include mq(desk) {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -46,7 +47,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 150px;
   }
 }
 
@@ -71,6 +71,7 @@
 }
 
 .offerings__title {
+  max-width: 527px;
   font-size: 28px;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -83,13 +84,10 @@
   @include mq(tab) {
     margin-top: 60px;
   }
-
-  @include mq(desk) {
-    margin-top: 200px;
-  }
 }
 
 .offerings__text {
+  max-width: 500px;
   font-size: 14px;
   line-height: calc(16 / 14);
   margin-bottom: 28px;
@@ -142,15 +140,12 @@
 }
 
 .offerings__icon-text {
-  width: 100%;
-
-  @include mq(tab) {
-    width: 253px;
-    margin-bottom: 40px;
-  }
-
   @include mq(mob) {
     margin-bottom: 28px;
+  }
+
+  @include mq(tab) {
+    margin-bottom: 40px;
   }
 }
 
