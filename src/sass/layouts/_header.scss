@@ -14,24 +14,24 @@
 
 .nav {
   display: flex;
-  gap: 28px;
+  //gap: 28px;
   align-items: center;
   margin-left: auto;
+  margin-right: 30px;
 }
 
 .nav__list {
+  gap: 28px;
   display: flex;
   align-items: center;
-}
 
-@media (max-width: 767px) {
-  .nav__list {
+  @media (max-width: 767px) {
     display: none;
   }
 }
 
 .nav__item {
-  margin-right: 28px;
+  // margin-right: 28px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
