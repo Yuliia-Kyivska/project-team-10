@@ -1,12 +1,10 @@
-.header {
-  padding: 10px 0;
-}
-
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header__logo {
@@ -15,6 +13,9 @@
 }
 
 .nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
   margin-left: auto;
   display: flex;
   gap: 28px;
@@ -33,6 +34,8 @@
 }
 
 .nav__item {
+    margin-right: 28px;
+    // margin-top: 28px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -101,6 +104,7 @@
     border: 0;
 
     // Text styles //
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
